@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nangcap.work | Nâng Tầm Hiệu Suất Công Việc</title>
-    <meta name="description" content="Chào mừng đến với nangcap.work - Nền tảng nâng tầm hiệu suất, tự động hoá và giải pháp công việc tương lai.">
+    <title>nangcap.work Agency | Digital Marketing & Performance Tăng Trưởng Thực Chiến (Est. 2024)</title>
+    <meta name="description" content="nangcap.work Agency - Digital Marketing Agency thế hệ mới thành lập năm 2024. Chuyên sâu Performance Ads, Creative Content Engine và Tối ưu hóa LTV cho doanh nghiệp.">
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -31,242 +33,505 @@
                             800: '#163cb6',
                             900: '#17368f',
                         }
-                    },
-                    animation: {
-                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                        'float': 'float 6s ease-in-out infinite',
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-12px)' },
-                        }
                     }
                 }
             }
         }
     </script>
+    
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+
     <style>
         body {
-            background-color: #0b0f19;
+            background-color: #090d16;
             color: #f1f5f9;
             overflow-x: hidden;
         }
-        .glow-bg {
-            background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.22) 0%, rgba(15, 23, 42, 0) 70%);
+        .glow-radial {
+            background: radial-gradient(circle at 50% -20%, rgba(37, 99, 235, 0.28) 0%, rgba(15, 23, 42, 0) 70%);
         }
         .glass-card {
-            background: rgba(17, 24, 39, 0.7);
+            background: rgba(15, 23, 42, 0.72);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
             border: 1px solid rgba(255, 255, 255, 0.08);
         }
         .glass-card:hover {
-            border-color: rgba(96, 165, 250, 0.35);
-            box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.2);
+            border-color: rgba(96, 165, 250, 0.38);
+            box-shadow: 0 12px 36px -12px rgba(59, 130, 246, 0.25);
         }
-        .gradient-text {
-            background: linear-gradient(135deg, #ffffff 0%, #93c5fd 50%, #3b82f6 100%);
+        .gradient-heading {
+            background: linear-gradient(135deg, #ffffff 10%, #93c5fd 60%, #3b82f6 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+        .tag-pill {
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.25);
+            color: #60a5fa;
         }
     </style>
 </head>
 <body class="min-h-screen flex flex-col justify-between selection:bg-blue-600 selection:text-white">
 
-    <!-- Background effects -->
-    <div class="fixed inset-0 glow-bg pointer-events-none -z-10"></div>
-    <div class="fixed -top-40 -right-40 w-96 h-96 bg-blue-600/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
-    <div class="fixed -bottom-40 -left-40 w-96 h-96 bg-indigo-600/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <!-- Background Orbs -->
+    <div class="fixed inset-0 glow-radial pointer-events-none -z-10"></div>
+    <div class="fixed -top-32 -right-32 w-96 h-96 bg-blue-600/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed top-1/2 -left-48 w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
 
     <!-- Header / Navigation -->
     <header class="w-full border-b border-white/5 backdrop-blur-md sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center shadow-lg shadow-blue-500/25 group-hover:scale-105 transition-transform duration-300">
-                    <i data-lucide="sparkles" class="w-5 h-5 text-white"></i>
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center shadow-lg shadow-blue-500/25 group-hover:scale-105 transition-transform duration-300">
+                    <i data-lucide="zap" class="w-5 h-5 text-white"></i>
                 </div>
                 <div class="flex flex-col">
                     <span class="font-bold text-lg tracking-tight text-white group-hover:text-blue-400 transition-colors">nangcap<span class="text-blue-500">.work</span></span>
-                    <span class="text-[11px] text-slate-400 font-medium">Level Up Your Productivity</span>
+                    <span class="text-[10px] text-slate-400 font-semibold uppercase tracking-wider">Digital Marketing Agency</span>
                 </div>
             </a>
 
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-                <a href="#features" class="hover:text-white transition-colors">Tính Năng</a>
-                <a href="#about" class="hover:text-white transition-colors">Giới Thiệu</a>
-                <a href="#newsletter" class="hover:text-white transition-colors">Nhận Bản Tin</a>
+                <a href="#services" class="hover:text-blue-400 transition-colors">Dịch Vụ</a>
+                <a href="#stats" class="hover:text-blue-400 transition-colors">Hiệu Quả Thực Chiến</a>
+                <a href="#process" class="hover:text-blue-400 transition-colors">Quy Trình</a>
+                <a href="#calculator" class="hover:text-blue-400 transition-colors">Ước Tính Doanh Số</a>
+                <a href="#faq" class="hover:text-blue-400 transition-colors">Hỏi Đáp</a>
             </nav>
 
             <div class="flex items-center gap-4">
-                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold">
-                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-                    <span>Hệ thống online</span>
-                </div>
+                <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs sm:text-sm font-semibold transition-all shadow-md shadow-blue-600/30 hover:-translate-y-0.5">
+                    <span>Nhận Tư Vấn 1-1</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
             </div>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="max-w-6xl mx-auto px-6 py-16 md:py-24 flex-1 flex flex-col items-center text-center">
-        
-        <!-- Welcome Badge -->
-        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-slate-300 text-xs sm:text-sm font-medium mb-8 hover:bg-white/5 transition-all cursor-default">
-            <span class="px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-wider">Mới Ra Mắt</span>
-            <span id="greeting-text">Chào mừng bạn ghé thăm nangcap.work</span>
-            <i data-lucide="arrow-right" class="w-4 h-4 text-blue-400"></i>
-        </div>
+    <main class="flex-1">
 
-        <!-- Hero Headline -->
-        <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight max-w-4xl leading-[1.15] mb-6">
-            Nơi Mọi Quy Trình Được <br class="hidden sm:block" />
-            <span class="gradient-text">Nâng Cấp Vượt Trội</span>
-        </h1>
-
-        <!-- Subheading -->
-        <p class="text-slate-400 text-base sm:text-xl max-w-2xl leading-relaxed mb-10">
-            Chào mừng bạn đến với <span class="text-white font-semibold">nangcap.work</span>. Không gian hội tụ các giải pháp công nghệ, AI và phương pháp làm việc thông minh giúp bạn bứt phá năng suất mỗi ngày.
-        </p>
-
-        <!-- CTA Action Buttons -->
-        <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-20">
-            <a href="#newsletter" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm transition-all shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 hover:-translate-y-0.5 active:translate-y-0">
-                <i data-lucide="bell" class="w-4 h-4"></i>
-                <span>Đăng Ký Nhận Thông Báo</span>
-            </a>
-            <a href="#features" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl glass-card text-slate-200 hover:text-white hover:bg-white/10 font-semibold text-sm transition-all hover:-translate-y-0.5 active:translate-y-0">
-                <i data-lucide="compass" class="w-4 h-4"></i>
-                <span>Khám Phá Tính Năng</span>
-            </a>
-        </div>
-
-        <!-- Key Highlights Grid -->
-        <div id="features" class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full text-left mb-24">
-            <!-- Card 1 -->
-            <div class="glass-card rounded-2xl p-7 transition-all duration-300">
-                <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center mb-5">
-                    <i data-lucide="cpu" class="w-6 h-6"></i>
-                </div>
-                <h3 class="text-xl font-bold text-white mb-2">Trợ Lực Bởi AI</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">
-                    Tận dụng các mô hình ngôn ngữ lớn và công cụ AI thế hệ mới để tự động hóa các tác vụ lặp lại, tiết kiệm thời gian quý báu.
-                </p>
+        <!-- HERO SECTION -->
+        <section class="max-w-6xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center flex flex-col items-center">
+            <!-- Badge Founded 2024 -->
+            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass-card text-slate-300 text-xs sm:text-sm font-medium mb-8">
+                <span class="px-2.5 py-0.5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-wider">Thành Lập 2024</span>
+                <span class="text-slate-300 font-medium">Digital Marketing Thế Hệ Mới — Tăng Trưởng Dựa Trên Dữ Liệu</span>
+                <i data-lucide="sparkles" class="w-4 h-4 text-amber-400"></i>
             </div>
 
-            <!-- Card 2 -->
-            <div class="glass-card rounded-2xl p-7 transition-all duration-300">
-                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center mb-5">
-                    <i data-lucide="zap" class="w-6 h-6"></i>
-                </div>
-                <h3 class="text-xl font-bold text-white mb-2">Tốc Độ & Hiệu Quả</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">
-                    Tối giản quy trình, loại bỏ các bước thừa thãi để tập trung 100% năng lượng vào những giá trị cốt lõi mang lại hiệu quả cao nhất.
-                </p>
-            </div>
+            <!-- Headline -->
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight max-w-5xl leading-[1.15] mb-6">
+                Chuyển Hóa Ngân Sách Ads Thành <br class="hidden sm:block" />
+                <span class="gradient-heading">Doanh Số Thực Tế</span> Bền Vững
+            </h1>
 
-            <!-- Card 3 -->
-            <div class="glass-card rounded-2xl p-7 transition-all duration-300">
-                <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center mb-5">
-                    <i data-lucide="shield-check" class="w-6 h-6"></i>
-                </div>
-                <h3 class="text-xl font-bold text-white mb-2">Bền Vững & Tin Cậy</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">
-                    Thiết kế chuẩn kỹ thuật với tiêu chuẩn bảo mật, mã nguồn minh bạch và khả năng mở rộng linh hoạt theo từng giai đoạn phát triển.
-                </p>
-            </div>
-        </div>
-
-        <!-- Newsletter / Contact Box -->
-        <div id="newsletter" class="w-full max-w-2xl glass-card rounded-3xl p-8 sm:p-10 text-center relative overflow-hidden">
-            <div class="absolute -right-16 -bottom-16 w-48 h-48 bg-blue-500/10 rounded-full blur-2xl pointer-events-none"></div>
-            
-            <i data-lucide="mail" class="w-10 h-10 text-blue-400 mx-auto mb-4"></i>
-            <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3">Đồng Hành Cùng Chúng Tôi</h2>
-            <p class="text-slate-400 text-sm sm:text-base max-w-md mx-auto mb-6">
-                Để lại email để nhận thông báo sớm nhất khi nangcap.work chính thức kích hoạt các tiện ích mới.
+            <!-- Subtitle -->
+            <p class="text-slate-400 text-base sm:text-xl max-w-3xl leading-relaxed mb-10">
+                Từ năm <span class="text-white font-semibold">2024</span>, <span class="text-blue-400 font-semibold">nangcap.work Agency</span> đồng hành cùng các doanh nghiệp SMEs và E-commerce bứt phá giới hạn với chiến lược Performance Marketing đa định dạng, sáng tạo nội dung chuyển đổi và tối ưu vòng đời khách hàng (LTV).
             </p>
 
-            <form id="subscribe-form" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="handleSubscribe(event)">
-                <input 
-                    type="email" 
-                    id="email-input"
-                    required
-                    placeholder="Nhập địa chỉ email của bạn..." 
-                    class="flex-1 px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
-                />
-                <button 
-                    type="submit" 
-                    id="submit-btn"
-                    class="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm transition-all shadow-md shadow-blue-600/30 flex items-center justify-center gap-2 whitespace-nowrap"
-                >
-                    <span>Tham Gia</span>
-                    <i data-lucide="send" class="w-4 h-4"></i>
-                </button>
-            </form>
-            <div id="form-feedback" class="mt-4 text-xs font-medium hidden"></div>
-        </div>
+            <!-- CTA Action Buttons -->
+            <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-16">
+                <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm transition-all shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 hover:-translate-y-0.5">
+                    <i data-lucide="file-check" class="w-4 h-4"></i>
+                    <span>Đăng Ký Audit Kênh Miễn Phí</span>
+                </a>
+                <a href="#services" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl glass-card text-slate-200 hover:text-white hover:bg-white/10 font-semibold text-sm transition-all hover:-translate-y-0.5">
+                    <i data-lucide="layout-grid" class="w-4 h-4"></i>
+                    <span>Khám Phá Dịch Vụ Cốt Lõi</span>
+                </a>
+            </div>
+
+            <!-- Stats Bar -->
+            <div id="stats" class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 w-full max-w-5xl text-left">
+                <div class="glass-card rounded-2xl p-6">
+                    <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold block mb-1">Khởi nguồn từ</span>
+                    <div class="text-3xl sm:text-4xl font-extrabold text-white">2024</div>
+                    <p class="text-xs text-slate-400 mt-2">Kỷ nguyên AI & Data Marketing hiện đại</p>
+                </div>
+                <div class="glass-card rounded-2xl p-6">
+                    <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold block mb-1">Dự án triển khai</span>
+                    <div class="text-3xl sm:text-4xl font-extrabold text-blue-400">150+</div>
+                    <p class="text-xs text-slate-400 mt-2">Chiến dịch đa ngành nghề</p>
+                </div>
+                <div class="glass-card rounded-2xl p-6">
+                    <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold block mb-1">ROAS trung bình</span>
+                    <div class="text-3xl sm:text-4xl font-extrabold text-emerald-400">3.8x</div>
+                    <p class="text-xs text-slate-400 mt-2">Tối ưu hiệu quả trên từng đồng chi phí</p>
+                </div>
+                <div class="glass-card rounded-2xl p-6">
+                    <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold block mb-1">Khách hàng hài lòng</span>
+                    <div class="text-3xl sm:text-4xl font-extrabold text-indigo-400">95%</div>
+                    <p class="text-xs text-slate-400 mt-2">Duy trì hợp tác liên tục</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="max-w-7xl mx-auto px-6 py-20 border-t border-white/5">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full tag-pill text-xs font-semibold uppercase tracking-wider mb-3">
+                    Giải Pháp Cốt Lõi
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Hệ Thống Dịch Vụ Digital Marketing Toàn Diện</h2>
+                <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                    Không đốt tiền vào những con số tương tác ảo. Chúng tôi tập trung vào tỉ lệ chuyển đổi, chi phí trên mỗi đơn hàng (CPA) và giá trị trọn đời của khách hàng.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service 1 -->
+                <div class="glass-card rounded-2xl p-7 flex flex-col justify-between transition-all duration-300">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center mb-6">
+                            <i data-lucide="target" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Performance Ads</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Quảng cáo đa nền tảng (Meta, TikTok, Google Ads). Ứng dụng kỹ thuật Ma trận đa định dạng (MFA), phân tách nhóm sở thích đơn lẻ và đấu thầu thông minh để tránh lãng phí ngân sách.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-300 space-y-2 border-t border-white/5 pt-4">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Micro-budget Test chuẩn xác</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Tối ưu CPA & Tỷ lệ chốt đơn</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card rounded-2xl p-7 flex flex-col justify-between transition-all duration-300">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center mb-6">
+                            <i data-lucide="video" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Creative & Video Engine</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Sản xuất video ngắn (Reels, TikTok, Shorts) đánh trúng nỗi đau khách hàng. Kịch bản neo cảm xúc, nội dung kích thích tương tác tự nhiên và bài trí hình ảnh thôi thúc hành động.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-300 space-y-2 border-t border-white/5 pt-4">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> Video ngắn viral giữ chân người xem</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> Content mỏ neo tạo độ tin cậy</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card rounded-2xl p-7 flex flex-col justify-between transition-all duration-300">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center mb-6">
+                            <i data-lucide="repeat" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">CRM & Tối Ưu LTV</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Tối đa hóa doanh thu sau bán hàng (Post-Purchase Revenue). Xây dựng kịch bản chăm sóc 3 nấc, phân loại khách theo hành vi và kích hoạt tái mua hàng để tăng biên lợi nhuận.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-300 space-y-2 border-t border-white/5 pt-4">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> Kịch bản Upsell & Cross-sell tự động</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> Giảm phụ thuộc vào tiền ads mới</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card rounded-2xl p-7 flex flex-col justify-between transition-all duration-300">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-6">
+                            <i data-lucide="briefcase" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Tư Vấn & Đào Tạo In-house</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Đồng hành xây dựng bộ phận Marketing nội bộ tinh gọn cho doanh nghiệp. Chuyển giao bảng biểu đo lường, quy trình quản trị ngân sách và tư duy chạy ads chuẩn chỉnh.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-300 space-y-2 border-t border-white/5 pt-4">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Đào tạo nhân sự thực chiến</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Quy chuẩn báo cáo minh bạch 100%</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS SECTION -->
+        <section id="process" class="max-w-6xl mx-auto px-6 py-20 border-t border-white/5">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full tag-pill text-xs font-semibold uppercase tracking-wider mb-3">
+                    Phương Pháp Làm Việc
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Quy Trình 4 Bước Chuẩn Thực Chiến</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Mọi quyết định đều dựa trên số liệu thực tế, minh bạch và an toàn cho ngân sách của bạn.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+                <div class="glass-card rounded-2xl p-6 relative">
+                    <div class="text-4xl font-black text-blue-500/20 mb-3">01</div>
+                    <h4 class="text-lg font-bold text-white mb-2">Audit & Khảo Sát</h4>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                        Phân tích tài khoản quảng cáo, cấu trúc giá sản phẩm và tìm ra các điểm nghẽn chuyển đổi hiện tại.
+                    </p>
+                </div>
+                <div class="glass-card rounded-2xl p-6 relative">
+                    <div class="text-4xl font-black text-blue-500/20 mb-3">02</div>
+                    <h4 class="text-lg font-bold text-white mb-2">Kế Hoạch & Ma Trận</h4>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                        Thiết lập ma trận nội dung MFA, xác định tệp khách hàng mục tiêu và phân bổ ngân sách thăm dò thông minh.
+                    </p>
+                </div>
+                <div class="glass-card rounded-2xl p-6 relative">
+                    <div class="text-4xl font-black text-blue-500/20 mb-3">03</div>
+                    <h4 class="text-lg font-bold text-white mb-2">Triển Khai & Đo Lường</h4>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                        Chạy thử nghiệm có kiểm soát, theo dõi chi phí trên từng inbox/đơn hàng thực tế theo từng ngày.
+                    </p>
+                </div>
+                <div class="glass-card rounded-2xl p-6 relative">
+                    <div class="text-4xl font-black text-blue-500/20 mb-3">04</div>
+                    <h4 class="text-lg font-bold text-white mb-2">Scale & Tối Ưu LTV</h4>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                        Nhân rộng các nhóm ads thắng thế, kết hợp hệ thống chăm sóc tự động để tối ưu hóa biên lợi nhuận ròng.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROI CALCULATOR WIDGET -->
+        <section id="calculator" class="max-w-4xl mx-auto px-6 py-20 border-t border-white/5">
+            <div class="glass-card rounded-3xl p-8 sm:p-12 relative overflow-hidden">
+                <div class="text-center max-w-xl mx-auto mb-10">
+                    <span class="inline-block px-3 py-1 rounded-full tag-pill text-xs font-semibold uppercase tracking-wider mb-3">Công Cụ Ước Tính</span>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-white mb-2">Mô Phỏng Doanh Số Kỳ Vọng</h3>
+                    <p class="text-slate-400 text-xs sm:text-sm">Ước tính hiệu quả với hệ thống tối ưu chuyển đổi từ nangcap.work Agency.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                                Ngân Sách Ads Dự Kiến / Tháng: <span id="budget-display" class="text-blue-400 font-bold">20.000.000 VNĐ</span>
+                            </label>
+                            <input 
+                                type="range" 
+                                id="budget-range" 
+                                min="5000000" 
+                                max="100000000" 
+                                step="5000000" 
+                                value="20000000" 
+                                class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                                oninput="updateCalculator()"
+                            />
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                                Mục Tiêu ROAS Kỳ Vọng: <span id="roas-display" class="text-emerald-400 font-bold">3.5x</span>
+                            </label>
+                            <input 
+                                type="range" 
+                                id="roas-range" 
+                                min="2.0" 
+                                max="6.0" 
+                                step="0.5" 
+                                value="3.5" 
+                                class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-emerald-500"
+                                oninput="updateCalculator()"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="bg-black/40 border border-white/10 rounded-2xl p-6 text-center">
+                        <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold block mb-2">Doanh Thu Ước Tính Đạt Được</span>
+                        <div id="revenue-result" class="text-3xl sm:text-4xl font-extrabold text-blue-400 mb-2">70.000.000 VNĐ</div>
+                        <span class="text-xs text-slate-500 block">Được trợ lực bởi tối ưu phễu chuyển đổi & chăm sóc LTV</span>
+                        
+                        <a href="#contact" class="mt-6 inline-flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold transition-all">
+                            <span>Lên Kế Hoạch Với Chúng Tôi</span>
+                            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section id="faq" class="max-w-4xl mx-auto px-6 py-20 border-t border-white/5">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <h2 class="text-3xl font-bold text-white mb-3">Câu Hỏi Thường Gặp</h2>
+                <p class="text-slate-400 text-sm">Các thắc mắc phổ biến của đối tác trước khi bắt đầu hợp tác.</p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="glass-card rounded-2xl p-6">
+                    <h4 class="font-bold text-white text-base mb-2 flex items-center justify-between">
+                        <span>nangcap.work Agency thành lập khi nào?</span>
+                        <i data-lucide="help-circle" class="w-4 h-4 text-blue-400"></i>
+                    </h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Chúng tôi được thành lập từ đầu năm 2024. Với vị thế là một Agency thế hệ mới, chúng tôi tận dụng tối đa sức mạnh của AI, công nghệ dữ liệu và tư duy Performance hiện đại để mang lại kết quả rõ ràng nhất mà không cồng kềnh bộ máy.
+                    </p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-6">
+                    <h4 class="font-bold text-white text-base mb-2 flex items-center justify-between">
+                        <span>Doanh nghiệp có quy mô nhỏ hoặc ngân sách ít có hợp tác được không?</span>
+                        <i data-lucide="help-circle" class="w-4 h-4 text-blue-400"></i>
+                    </h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Hoàn toàn được. Chúng tôi áp dụng quy tắc Test Ngân Sách Thăm Dò (Micro-Budget Test) để tìm ra công thức sinh lời trước khi doanh nghiệp mở rộng quy mô.
+                    </p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-6">
+                    <h4 class="font-bold text-white text-base mb-2 flex items-center justify-between">
+                        <span>Hợp đồng và báo cáo có minh bạch không?</span>
+                        <i data-lucide="help-circle" class="w-4 h-4 text-blue-400"></i>
+                    </h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        100% minh bạch. Tài khoản quảng cáo thuộc quyền sở hữu của bạn, số liệu báo cáo tự động theo thời gian thực và cam kết bảo mật thông tin dự án.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT & AUDIT FORM -->
+        <section id="contact" class="max-w-4xl mx-auto px-6 py-20 border-t border-white/5">
+            <div class="glass-card rounded-3xl p-8 sm:p-12 relative overflow-hidden">
+                <div class="text-center max-w-xl mx-auto mb-10">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full tag-pill text-xs font-semibold uppercase tracking-wider mb-3">
+                        Đồng Hành Ngay Hôm Nay
+                    </div>
+                    <h2 class="text-3xl font-bold text-white mb-3">Nhận Bản Kiểm Toán (Audit) Kênh Miễn Phí</h2>
+                    <p class="text-slate-400 text-sm">Điền thông tin bên dưới, chuyên viên của nangcap.work sẽ nghiên cứu và liên hệ tư vấn giải pháp tối ưu trong vòng 24h.</p>
+                </div>
+
+                <form id="contact-form" class="space-y-4 max-w-lg mx-auto" onsubmit="handleFormSubmit(event)">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1.5">Họ và tên của bạn</label>
+                            <input 
+                                type="text" 
+                                id="form-name"
+                                required 
+                                placeholder="Nguyễn Văn A" 
+                                class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
+                            />
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1.5">Số điện thoại / Zalo</label>
+                            <input 
+                                type="tel" 
+                                id="form-phone"
+                                required 
+                                placeholder="09xxxxxxxx" 
+                                class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
+                            />
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-medium text-slate-300 mb-1.5">Email liên hệ</label>
+                        <input 
+                            type="email" 
+                            id="form-email"
+                            required 
+                            placeholder="tenban@doanhnghiep.com" 
+                            class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
+                        />
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-medium text-slate-300 mb-1.5">Ngân sách dự kiến mỗi tháng</label>
+                        <select 
+                            id="form-budget"
+                            class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-white/10 text-white text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
+                        >
+                            <option value="duoi-20m">Dưới 20 triệu / tháng</option>
+                            <option value="20m-50m">Từ 20 - 50 triệu / tháng</option>
+                            <option value="50m-100m">Từ 50 - 100 triệu / tháng</option>
+                            <option value="tren-100m">Trên 100 triệu / tháng</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-medium text-slate-300 mb-1.5">Mục tiêu ưu tiên nhất hiện tại</label>
+                        <textarea 
+                            id="form-goal"
+                            rows="3" 
+                            placeholder="Ví dụ: Giảm chi phí tin nhắn, tăng tỷ lệ chốt đơn, xây dựng kênh video ngắn..."
+                            class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
+                        ></textarea>
+                    </div>
+
+                    <button 
+                        type="submit" 
+                        id="form-submit-btn"
+                        class="w-full py-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm transition-all shadow-lg shadow-blue-600/30 flex items-center justify-center gap-2"
+                    >
+                        <span>Gửi Yêu Cầu Tư Vấn</span>
+                        <i data-lucide="send" class="w-4 h-4"></i>
+                    </button>
+
+                    <div id="contact-feedback" class="text-center text-xs font-semibold text-emerald-400 hidden mt-3"></div>
+                </form>
+            </div>
+        </section>
 
     </main>
 
-    <!-- Footer -->
-    <footer class="w-full border-t border-white/5 py-8 mt-16 text-center text-slate-500 text-xs sm:text-sm">
-        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div class="flex items-center gap-2">
-                <span class="font-semibold text-slate-300">nangcap.work</span>
-                <span>— Cùng nhau bứt phá giới hạn</span>
+    <!-- FOOTER -->
+    <footer class="w-full border-t border-white/5 py-10 text-slate-500 text-xs sm:text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center text-white">
+                    <i data-lucide="zap" class="w-4 h-4"></i>
+                </div>
+                <div>
+                    <span class="font-bold text-slate-200">nangcap.work Agency</span>
+                    <span class="text-slate-500 ml-2">— Khởi tạo từ 2024. Cùng nhau bứt phá giới hạn.</span>
+                </div>
             </div>
-            <div class="flex items-center gap-6">
-                <span>© 2026 nangcap.work. All rights reserved.</span>
+            <div class="flex items-center gap-6 text-slate-400">
+                <a href="#services" class="hover:text-white transition-colors">Dịch Vụ</a>
+                <a href="#process" class="hover:text-white transition-colors">Quy Trình</a>
+                <a href="#faq" class="hover:text-white transition-colors">Hỏi Đáp</a>
+                <span>© 2024 - 2026 nangcap.work. All rights reserved.</span>
             </div>
         </div>
     </footer>
 
-    <!-- Interactive Scripts -->
+    <!-- INTERACTIVE SCRIPTS -->
     <script>
-        // Initialize Lucide Icons
+        // Init Lucide
         lucide.createIcons();
 
-        // Dynamic greeting according to time of day
-        (function initGreeting() {
-            const hour = new Date().getHours();
-            const greetingEl = document.getElementById('greeting-text');
-            if (!greetingEl) return;
-            
-            let timeText = 'ngày mới tốt lành';
-            if (hour >= 5 && hour < 12) {
-                timeText = 'buổi sáng năng động';
-            } else if (hour >= 12 && hour < 18) {
-                timeText = 'buổi chiều nhiều năng lượng';
-            } else {
-                timeText = 'buổi tối an lành';
-            }
-            greetingEl.textContent = `Chúc bạn một ${timeText}! Chào mừng đến với nangcap.work`;
-        })();
+        // Calculator function
+        function updateCalculator() {
+            const budgetVal = parseInt(document.getElementById('budget-range').value);
+            const roasVal = parseFloat(document.getElementById('roas-range').value);
 
-        // Form handler
-        function handleSubscribe(e) {
+            document.getElementById('budget-display').textContent = budgetVal.toLocaleString('vi-VN') + ' VNĐ';
+            document.getElementById('roas-display').textContent = roasVal.toFixed(1) + 'x';
+
+            const revenue = Math.round(budgetVal * roasVal);
+            document.getElementById('revenue-result').textContent = revenue.toLocaleString('vi-VN') + ' VNĐ';
+        }
+
+        // Contact Form handler
+        function handleFormSubmit(e) {
             e.preventDefault();
-            const emailInput = document.getElementById('email-input');
-            const feedback = document.getElementById('form-feedback');
-            const submitBtn = document.getElementById('submit-btn');
-            
-            if (!emailInput || !feedback) return;
-            
-            const email = emailInput.value.trim();
-            if (!email) return;
+            const btn = document.getElementById('form-submit-btn');
+            const feedback = document.getElementById('contact-feedback');
+            const name = document.getElementById('form-name').value.trim();
 
-            // Simple UI feedback simulation
-            submitBtn.disabled = true;
-            submitBtn.classList.add('opacity-70');
-            
+            btn.disabled = true;
+            btn.classList.add('opacity-70');
+
             setTimeout(() => {
-                feedback.className = 'mt-4 text-xs font-medium text-emerald-400 block';
-                feedback.textContent = `Cảm ơn bạn (${email})! Chúng tôi đã ghi nhận và sẽ liên hệ sớm nhất.`;
-                emailInput.value = '';
-                submitBtn.disabled = false;
-                submitBtn.classList.remove('opacity-70');
+                feedback.classList.remove('hidden');
+                feedback.textContent = `Cảm ơn anh/chị ${name}! Đội ngũ chuyên gia nangcap.work Agency đã nhận được thông tin và sẽ liên hệ trong 24 giờ.`;
+                e.target.reset();
+                btn.disabled = false;
+                btn.classList.remove('opacity-70');
             }, 600);
         }
     </script>

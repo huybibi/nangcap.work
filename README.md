@@ -1,31 +1,37 @@
-# nangcap.work 🚀
+# nangcap.work Agency 🚀
 
-Trang web chào mừng chính thức của **nangcap.work** — Nền tảng nâng tầm hiệu suất, tự động hoá và giải pháp công việc tương lai.
+**nangcap.work Agency** — Digital Marketing & Performance Agency thế hệ mới, thành lập từ năm **2024**.
 
-## ✨ Điểm Nổi Bật
+Chuyên sâu đồng hành cùng các doanh nghiệp SMEs và E-commerce bứt phá tăng trưởng doanh thu dựa trên dữ liệu, ma trận quảng cáo đa định dạng (MFA) và tối ưu hóa vòng đời khách hàng (LTV).
 
-- **Thiết kế hiện đại & Tối giản:** Tông màu Dark Slate, hiệu ứng Glassmorphism, Responsive toàn diện trên mọi kích thước màn hình.
-- **Trải nghiệm tương tác:** Lời chào cá nhân hoá theo khung giờ thực tế (sáng/trưa/tối), hiệu ứng icon Lucide mượt mà.
-- **Tối ưu tốc độ:** Tối ưu hóa Static HTML, không phụ thuộc build phức tạp, sẵn sàng triển khai thẳng lên Cloudflare Pages.
+---
+
+## ⚡ Các Trụ Cột Dịch Vụ Cốt Lõi
+
+1. **Performance Ads (Meta, TikTok, Google Ads):** Tối ưu CPA, chia nhỏ nhóm sở thích đơn lẻ, micro-budget test và đấu thầu thông minh.
+2. **Creative & Video Engine:** Sản xuất video ngắn (Reels, TikTok, Shorts) giữ chân người xem cao, content mỏ neo đánh trúng tâm lý mua hàng.
+3. **CRM & Tối Ưu LTV:** Khai thác tối đa doanh thu sau bán hàng (Post-Purchase Revenue) với quy trình chăm sóc 3 nấc.
+4. **Tư Vấn & Đào Tạo In-house:** Chuyển giao quy trình vận hành và báo cáo minh bạch cho doanh nghiệp.
+
+---
 
 ## ☁️ Hướng Dẫn Triển Khai Lên Cloudflare Pages
 
-Mã nguồn được cấu trúc tĩnh (Static HTML), bạn có thể triển khai lên Cloudflare theo 2 cách đơn giản:
+Mã nguồn được cấu trúc tĩnh thuần túy (Static HTML/JS/Tailwind CDN), sẵn sàng triển khai mượt mà lên Cloudflare Pages:
 
-### Cách 1: Kết Nối Git Trực Tiếp Từ Cloudflare Dashboard
-1. Truy cập **Cloudflare Dashboard** > **Workers & Pages** > **Create application** > **Pages** > **Connect to Git**.
+### Cách 1: Kết Nối Git Từ Cloudflare Dashboard
+1. Vào **Cloudflare Dashboard** > **Workers & Pages** > **Create application** > **Pages** > **Connect to Git**.
 2. Chọn repository riêng tư (Private) `nangcap.work`.
-3. Cấu hình triển khai:
+3. Cấu hình:
    - **Framework preset:** `None`
    - **Build command:** để trống
    - **Build output directory:** `/` (hoặc `.`)
-4. Bấm **Save and Deploy**.
+4. Chọn **Save and Deploy**.
 
 ### Cách 2: Triển Khai Qua Wrangler CLI
-Nếu có sẵn Wrangler trên máy:
 ```bash
 npx wrangler pages deploy . --project-name=nangcap-work
 ```
 
 ---
-© 2026 nangcap.work. All rights reserved.
+© 2024 - 2026 nangcap.work Agency. All rights reserved.
