@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nangcap.work | Nâng Tầm Hiệu Suất Công Việc</title>
+    <meta name="description" content="Chào mừng đến với nangcap.work - Nền tảng nâng tầm hiệu suất, tự động hoá và giải pháp công việc tương lai.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eef6ff',
+                            100: '#d9ebff',
+                            200: '#bcdbff',
+                            300: '#8ec3ff',
+                            400: '#59a1ff',
+                            500: '#327fff',
+                            600: '#1b60f5',
+                            700: '#1349e1',
+                            800: '#163cb6',
+                            900: '#17368f',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-12px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            background-color: #0b0f19;
+            color: #f1f5f9;
+            overflow-x: hidden;
+        }
+        .glow-bg {
+            background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.22) 0%, rgba(15, 23, 42, 0) 70%);
+        }
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(96, 165, 250, 0.35);
+            box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #ffffff 0%, #93c5fd 50%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-blue-600 selection:text-white">
+
+    <!-- Background effects -->
+    <div class="fixed inset-0 glow-bg pointer-events-none -z-10"></div>
+    <div class="fixed -top-40 -right-40 w-96 h-96 bg-blue-600/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed -bottom-40 -left-40 w-96 h-96 bg-indigo-600/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- Header / Navigation -->
+    <header class="w-full border-b border-white/5 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center shadow-lg shadow-blue-500/25 group-hover:scale-105 transition-transform duration-300">
+                    <i data-lucide="sparkles" class="w-5 h-5 text-white"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg tracking-tight text-white group-hover:text-blue-400 transition-colors">nangcap<span class="text-blue-500">.work</span></span>
+                    <span class="text-[11px] text-slate-400 font-medium">Level Up Your Productivity</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#features" class="hover:text-white transition-colors">Tính Năng</a>
+                <a href="#about" class="hover:text-white transition-colors">Giới Thiệu</a>
+                <a href="#newsletter" class="hover:text-white transition-colors">Nhận Bản Tin</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span>Hệ thống online</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-6 py-16 md:py-24 flex-1 flex flex-col items-center text-center">
+        
+        <!-- Welcome Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-slate-300 text-xs sm:text-sm font-medium mb-8 hover:bg-white/5 transition-all cursor-default">
+            <span class="px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-wider">Mới Ra Mắt</span>
+            <span id="greeting-text">Chào mừng bạn ghé thăm nangcap.work</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 text-blue-400"></i>
+        </div>
+
+        <!-- Hero Headline -->
+        <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight max-w-4xl leading-[1.15] mb-6">
+            Nơi Mọi Quy Trình Được <br class="hidden sm:block" />
+            <span class="gradient-text">Nâng Cấp Vượt Trội</span>
+        </h1>
+
+        <!-- Subheading -->
+        <p class="text-slate-400 text-base sm:text-xl max-w-2xl leading-relaxed mb-10">
+            Chào mừng bạn đến với <span class="text-white font-semibold">nangcap.work</span>. Không gian hội tụ các giải pháp công nghệ, AI và phương pháp làm việc thông minh giúp bạn bứt phá năng suất mỗi ngày.
+        </p>
+
+        <!-- CTA Action Buttons -->
+        <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-20">
+            <a href="#newsletter" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm transition-all shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 hover:-translate-y-0.5 active:translate-y-0">
+                <i data-lucide="bell" class="w-4 h-4"></i>
+                <span>Đăng Ký Nhận Thông Báo</span>
+            </a>
+            <a href="https://github.com/huybibi/nangcap.work" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl glass-card text-slate-200 hover:text-white hover:bg-white/10 font-semibold text-sm transition-all hover:-translate-y-0.5 active:translate-y-0">
+                <i data-lucide="github" class="w-4 h-4"></i>
+                <span>Xem Trên GitHub</span>
+            </a>
+        </div>
+
+        <!-- Key Highlights Grid -->
+        <div id="features" class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full text-left mb-24">
+            <!-- Card 1 -->
+            <div class="glass-card rounded-2xl p-7 transition-all duration-300">
+                <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center mb-5">
+                    <i data-lucide="cpu" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Trợ Lực Bởi AI</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Tận dụng các mô hình ngôn ngữ lớn và công cụ AI thế hệ mới để tự động hóa các tác vụ lặp lại, tiết kiệm thời gian quý báu.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="glass-card rounded-2xl p-7 transition-all duration-300">
+                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center mb-5">
+                    <i data-lucide="zap" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Tốc Độ & Hiệu Quả</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Tối giản quy trình, loại bỏ các bước thừa thãi để tập trung 100% năng lượng vào những giá trị cốt lõi mang lại hiệu quả cao nhất.
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="glass-card rounded-2xl p-7 transition-all duration-300">
+                <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center mb-5">
+                    <i data-lucide="shield-check" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Bền Vững & Tin Cậy</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Thiết kế chuẩn kỹ thuật với tiêu chuẩn bảo mật, mã nguồn minh bạch và khả năng mở rộng linh hoạt theo từng giai đoạn phát triển.
+                </p>
+            </div>
+        </div>
+
+        <!-- Newsletter / Contact Box -->
+        <div id="newsletter" class="w-full max-w-2xl glass-card rounded-3xl p-8 sm:p-10 text-center relative overflow-hidden">
+            <div class="absolute -right-16 -bottom-16 w-48 h-48 bg-blue-500/10 rounded-full blur-2xl pointer-events-none"></div>
+            
+            <i data-lucide="mail" class="w-10 h-10 text-blue-400 mx-auto mb-4"></i>
+            <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3">Đồng Hành Cùng Chúng Tôi</h2>
+            <p class="text-slate-400 text-sm sm:text-base max-w-md mx-auto mb-6">
+                Để lại email để nhận thông báo sớm nhất khi nangcap.work chính thức kích hoạt các tiện ích mới.
+            </p>
+
+            <form id="subscribe-form" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="handleSubscribe(event)">
+                <input 
+                    type="email" 
+                    id="email-input"
+                    required
+                    placeholder="Nhập địa chỉ email của bạn..." 
+                    class="flex-1 px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
+                />
+                <button 
+                    type="submit" 
+                    id="submit-btn"
+                    class="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm transition-all shadow-md shadow-blue-600/30 flex items-center justify-center gap-2 whitespace-nowrap"
+                >
+                    <span>Tham Gia</span>
+                    <i data-lucide="send" class="w-4 h-4"></i>
+                </button>
+            </form>
+            <div id="form-feedback" class="mt-4 text-xs font-medium hidden"></div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full border-t border-white/5 py-8 mt-16 text-center text-slate-500 text-xs sm:text-sm">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <span class="font-semibold text-slate-300">nangcap.work</span>
+                <span>— Cùng nhau bứt phá giới hạn</span>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="https://github.com/huybibi/nangcap.work" target="_blank" rel="noopener noreferrer" class="hover:text-slate-300 transition-colors flex items-center gap-1.5">
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                    <span>GitHub</span>
+                </a>
+                <span>© 2026 huybibi. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Dynamic greeting according to time of day
+        (function initGreeting() {
+            const hour = new Date().getHours();
+            const greetingEl = document.getElementById('greeting-text');
+            if (!greetingEl) return;
+            
+            let timeText = 'ngày mới tốt lành';
+            if (hour >= 5 && hour < 12) {
+                timeText = 'buổi sáng năng động';
+            } else if (hour >= 12 && hour < 18) {
+                timeText = 'buổi chiều nhiều năng lượng';
+            } else {
+                timeText = 'buổi tối an lành';
+            }
+            greetingEl.textContent = `Chúc bạn một ${timeText}! Chào mừng đến với nangcap.work`;
+        })();
+
+        // Form handler
+        function handleSubscribe(e) {
+            e.preventDefault();
+            const emailInput = document.getElementById('email-input');
+            const feedback = document.getElementById('form-feedback');
+            const submitBtn = document.getElementById('submit-btn');
+            
+            if (!emailInput || !feedback) return;
+            
+            const email = emailInput.value.trim();
+            if (!email) return;
+
+            // Simple UI feedback simulation
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-70');
+            
+            setTimeout(() => {
+                feedback.className = 'mt-4 text-xs font-medium text-emerald-400 block';
+                feedback.textContent = `Cảm ơn bạn (${email})! Chúng tôi đã ghi nhận và sẽ liên hệ sớm nhất.`;
+                emailInput.value = '';
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('opacity-70');
+            }, 600);
+        }
+    </script>
+</body>
+</html>
