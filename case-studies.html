@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies | nangcap.work — AI Automation Agency (AAA)</title>
+    <meta name="description" content="Real-world production deployments by nangcap.work: Enterprise AI Agent Swarms, Autonomous n8n Pipelines, Corrective RAG, and Sub-500ms Voice Concierges.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            400: '#22d3ee',
+                            500: '#06b6d4',
+                            600: '#0891b2',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            background-color: #06080f;
+            color: #f1f5f9;
+            overflow-x: hidden;
+        }
+        .glow-radial-hero {
+            background: radial-gradient(circle at 50% 0%, rgba(6, 182, 212, 0.22) 0%, rgba(59, 130, 246, 0.12) 40%, rgba(6, 8, 15, 0) 75%);
+        }
+        .bento-card {
+            background: rgba(13, 19, 33, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .bento-card:hover {
+            border-color: rgba(6, 182, 212, 0.4);
+            box-shadow: 0 16px 40px -15px rgba(6, 182, 212, 0.22);
+            transform: translateY(-2px);
+        }
+        .gradient-headline {
+            background: linear-gradient(135deg, #ffffff 15%, #a5f3fc 50%, #38bdf8 80%, #818cf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .tech-pill {
+            background: rgba(6, 182, 212, 0.08);
+            border: 1px solid rgba(6, 182, 212, 0.25);
+            color: #22d3ee;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-black">
+
+    <!-- Ambient Glow FX -->
+    <div class="fixed inset-0 glow-radial-hero pointer-events-none -z-10"></div>
+    <div class="fixed top-20 right-[-10%] w-[550px] h-[550px] bg-cyan-600/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+
+    <!-- Navigation Header -->
+    <header class="w-full border-b border-white/5 backdrop-blur-xl sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3.5 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-blue-600 to-indigo-600 flex items-center justify-center shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-all duration-300">
+                    <i data-lucide="cpu" class="w-5 h-5 text-white"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-extrabold text-lg tracking-tight text-white group-hover:text-cyan-400 transition-colors">
+                        nangcap<span class="text-cyan-400">.work</span>
+                    </span>
+                    <span class="text-[10px] font-mono uppercase tracking-widest text-slate-400">AI Automation Agency</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="index.html" class="hover:text-cyan-400 transition-colors">Overview</a>
+                <a href="services.html" class="hover:text-cyan-400 transition-colors">AAA Services</a>
+                <a href="case-studies.html" class="text-cyan-400 font-semibold border-b-2 border-cyan-400 pb-1">Case Studies</a>
+                <a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a>
+                <a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="contact.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-black font-semibold text-xs sm:text-sm transition-all shadow-lg shadow-cyan-500/25 hover:-translate-y-0.5">
+                    <span>Book AI Audit</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+
+        <!-- HEADER BANNER -->
+        <section class="max-w-5xl mx-auto px-6 pt-16 pb-14 text-center">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full tech-pill text-xs font-mono font-semibold uppercase tracking-wider mb-5">
+                Proof of Work // Production Benchmarks
+            </div>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-6">
+                Measurable ROI From <br class="hidden sm:block" />
+                <span class="gradient-headline">Deployed AI Agent Systems</span>
+            </h1>
+            <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+                Since our launch in April 2026, we have engineered and shipped production automation systems across FinTech, E-Commerce, Logistics, and Professional Services. Here are the audited outcomes.
+            </p>
+        </section>
+
+        <!-- CASE STUDIES LIST -->
+        <section class="max-w-6xl mx-auto px-6 py-10 space-y-12">
+            
+            <!-- Case Study 1: FinTech & SaaS -->
+            <div class="bento-card rounded-3xl p-8 sm:p-10 border-l-4 border-l-cyan-400">
+                <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-300 font-mono text-xs font-bold uppercase tracking-wider">FinTech & SaaS Operations</span>
+                        <span class="text-xs font-mono text-slate-400">Deployed: May 2026</span>
+                    </div>
+                    <span class="text-xs font-mono text-emerald-400 flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span> System Active (Autonomous)
+                    </span>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-4">
+                        <h2 class="text-2xl font-bold text-white">B2B Financial Platform: Autonomous Multi-Agent Invoice Ingestion & Discrepancy Auditing</h2>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            <strong>Challenge:</strong> The operations department employed 7 full-time specialists spending 35 hours weekly manually cross-checking PDF invoices against Stripe receipts, QuickBooks ledgers, and banking portals. Minor human typo errors were causing $40k+ monthly settlement delays.
+                        </p>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            <strong>Engineered Solution:</strong>
+                        </p>
+                        <ul class="text-xs sm:text-sm text-slate-300 space-y-2 list-disc list-inside">
+                            <li>Deployed an autonomous multi-agent pipeline using Claude 3.7 with deterministic JSON extraction.</li>
+                            <li>Engineered self-hosted n8n webhooks that cross-reference PO numbers with bank ledgers within 400ms.</li>
+                            <li>Integrated human-in-the-loop Slack notifications only when discrepancies exceed a configurable $100 threshold.</li>
+                        </ul>
+                    </div>
+
+                    <div class="lg:col-span-5 grid grid-cols-2 gap-4 bg-black/50 border border-white/5 rounded-2xl p-6 text-center font-mono">
+                        <div>
+                            <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-1">Hours Saved</span>
+                            <div class="text-3xl font-extrabold text-cyan-400">920 hrs/mo</div>
+                            <span class="text-[11px] text-slate-500 font-sans">Zero manual data entry</span>
+                        </div>
+                        <div>
+                            <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-1">Error Rate</span>
+                            <div class="text-3xl font-extrabold text-emerald-400">0.00%</div>
+                            <span class="text-[11px] text-slate-500 font-sans">Zero ledger discrepancies</span>
+                        </div>
+                        <div>
+                            <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-1">Latency</span>
+                            <div class="text-3xl font-extrabold text-blue-400">1.8s</div>
+                            <span class="text-[11px] text-slate-500 font-sans">Per document ingestion</span>
+                        </div>
+                        <div>
+                            <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-1">Annual Savings</span>
+                            <div class="text-3xl font-extrabold text-indigo-400">$215,000</div>
+                            <span class="text-[11px] text-slate-500 font-sans">Direct labor reallocation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study 2: E-Commerce Omnichannel Voice AI -->
+            <div class="bento-card rounded-3xl p-8 sm:p-10 border-l-4 border-l-blue-500">
+                <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 font-mono text-xs font-bold uppercase tracking-wider">E-Commerce & High-Ticket Retail</span>
+                        <span class="text-xs font-mono text-slate-400">Deployed: June 2026</span>
+                    </div>
+                    <span class="text-xs font-mono text-emerald-400 flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span> 24/7 Voice & Chat In Production
+                    </span>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-4">
+                        <h2 class="text-2xl font-bold text-white">Global Luxury Furniture: 24/7 Sub-500ms Voice Concierge for Abandoned High-Ticket Checkout</h2>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            <strong>Challenge:</strong> Average order value was $2,400. Over 65% of checkout carts were abandoned due to lingering questions regarding custom fabric choices and shipping windows. After-hours calls went directly to voicemail, losing high-intent buyers.
+                        </p>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            <strong>Engineered Solution:</strong>
+                        </p>
+                        <ul class="text-xs sm:text-sm text-slate-300 space-y-2 list-disc list-inside">
+                            <li>Implemented an instant WebRTC voice agent answering within 1 ring with natural, emotionally intelligent voice tone.</li>
+                            <li>Trained a custom RAG model indexing 3,400 SKU dimensions, upholstery specifications, and real-time warehouse inventory.</li>
+                            <li>Built an automated checkout link dispatch via WhatsApp and SMS during active phone conversations.</li>
+                        </ul>
+                    </div>
+
+                    <div class="lg:col-span-5 grid grid-cols-2 gap-4 bg-black/50 border border-white/5 rounded-2xl p-6 text-center font-mono">
+                        <div>
+                            <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-1">Recovered Carts</span>
+                            <div class="text-3xl font-extrabold text-blue-400">$340,000+</div>
+                            <span class="text-[11px] text-slate-500 font-sans">Within first 90 days</span>
+                        </div>
+                        <div>
+                            <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-1">Voice Latency</span>
+                            <div class="text-3xl font-extrabold text-cyan-400">420ms</div>
+                            <span class="text-[11px] text-slate-500 font-sans">Indistinguishable from human</span>
+                        </div>
+                        <div>
+                            <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-1">Missed Calls</span>
+                            <div class="text-3xl font-extrabold text-emerald-400">0%</div>
+                            <span class="text-[11px] text-slate-500 font-sans">Infinite concurrent capacity</span>
+                        </div>
+                        <div>
+                            <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-1">Conversion Lift</span>
+                            <div class="text-3xl font-extrabold text-indigo-400">3.4x</div>
+                            <span class="text-[11px] text-slate-500 font-sans">Over previous static forms</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study 3: Legal & Regulatory Enterprise RAG -->
+            <div class="bento-card rounded-3xl p-8 sm:p-10 border-l-4 border-l-indigo-500">
+                <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 font-mono text-xs font-bold uppercase tracking-wider">Enterprise Compliance & Legal</span>
+                        <span class="text-xs font-mono text-slate-400">Deployed: July 2026</span>
+                    </div>
+                    <span class="text-xs font-mono text-emerald-400 flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Private VPC Vector Cluster Live
+                    </span>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-4">
+                        <h2 class="text-2xl font-bold text-white">Cross-Border Consultancy: Zero-Hallucination Corrective RAG Over 180,000 Complex Contracts</h2>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            <strong>Challenge:</strong> Associates took 14+ hours per M&A transaction to audit indemnification clauses, change-of-control triggers, and regulatory non-competes across decades of PDFs and scanned documents.
+                        </p>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            <strong>Engineered Solution:</strong>
+                        </p>
+                        <ul class="text-xs sm:text-sm text-slate-300 space-y-2 list-disc list-inside">
+                            <li>Architected an enterprise Corrective RAG pipeline utilizing hybrid dense-sparse retrieval (Qdrant + BM25).</li>
+                            <li>Implemented semantic chunking with page-and-paragraph metadata verification before synthesis.</li>
+                            <li>Deployed fully isolated inside the client's private AWS VPC with zero public training telemetry.</li>
+                        </ul>
+                    </div>
+
+                    <div class="lg:col-span-5 grid grid-cols-2 gap-4 bg-black/50 border border-white/5 rounded-2xl p-6 text-center font-mono">
+                        <div>
+                            <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-1">Due Diligence Time</span>
+                            <div class="text-3xl font-extrabold text-indigo-400">-91%</div>
+                            <span class="text-[11px] text-slate-500 font-sans">Reduced from 14 hrs to 75 mins</span>
+                        </div>
+                        <div>
+                            <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-1">Citation Accuracy</span>
+                            <div class="text-3xl font-extrabold text-cyan-400">100%</div>
+                            <span class="text-[11px] text-slate-500 font-sans">Verified page-level anchors</span>
+                        </div>
+                        <div>
+                            <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-1">Data Retention</span>
+                            <div class="text-3xl font-extrabold text-emerald-400">0 KB</div>
+                            <span class="text-[11px] text-slate-500 font-sans">Zero external model caching</span>
+                        </div>
+                        <div>
+                            <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-1">Productivity Lift</span>
+                            <div class="text-3xl font-extrabold text-purple-400">11.2x</div>
+                            <span class="text-[11px] text-slate-500 font-sans">Deal capacity doubled</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="max-w-6xl mx-auto px-6 py-16 border-t border-white/5">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="inline-block px-3 py-1 rounded-full tech-pill text-xs font-mono font-semibold uppercase tracking-wider mb-3">Operator Endorsements</span>
+                <h2 class="text-3xl font-bold text-white mb-3">What Technical Leaders Say About nangcap.work</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 font-sans">
+                <div class="bento-card rounded-2xl p-6 flex flex-col justify-between">
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-6 italic">
+                        "Most AI agencies sell toy chatbots or generic wrapper scripts. nangcap.work built a bulletproof multi-agent pipeline that handles our actual mission-critical FinTech reconciliation. They shipped within 12 days and their code is clean."
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-white/5 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center font-mono font-bold text-cyan-400">DK</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">David Kim</h4>
+                            <span class="text-[11px] text-slate-400 font-mono">VP of Engineering, PayFlow Global</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bento-card rounded-2xl p-6 flex flex-col justify-between">
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-6 italic">
+                        "The sub-500ms voice agent nangcap.work configured for our retail checkout sounds shockingly natural. It paid for itself in recovered cart revenue in less than three weeks."
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-white/5 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-blue-500/20 border border-blue-500/40 flex items-center justify-center font-mono font-bold text-blue-400">SL</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Sarah Lin</h4>
+                            <span class="text-[11px] text-slate-400 font-mono">Chief Operations Officer, Aura Living</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bento-card rounded-2xl p-6 flex flex-col justify-between">
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-6 italic">
+                        "Their Corrective RAG system is the first LLM implementation our strict legal compliance department actually approved. No hallucinations, full page citations, and total data isolation."
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-white/5 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 border border-indigo-500/40 flex items-center justify-center font-mono font-bold text-indigo-400">MR</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Marcus Vance</h4>
+                            <span class="text-[11px] text-slate-400 font-mono">Managing Partner, Vance & Cole Legal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="max-w-4xl mx-auto px-6 py-16 text-center">
+            <div class="bento-card rounded-3xl p-10 relative overflow-hidden border-cyan-500/30">
+                <h3 class="text-2xl sm:text-3xl font-bold text-white mb-3">Want Similar Autonomous Architecture for Your Team?</h3>
+                <p class="text-slate-300 text-sm max-w-lg mx-auto mb-6">Let's audit your operations and identify which workflows can be automated with multi-agent pipelines.</p>
+                <a href="contact.html" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-extrabold text-sm transition-all shadow-lg shadow-cyan-400/25">
+                    <span>Schedule Technical Audit</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="w-full border-t border-white/5 py-12 text-slate-500 text-xs sm:text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-black font-bold">
+                    <i data-lucide="cpu" class="w-4 h-4"></i>
+                </div>
+                <div>
+                    <span class="font-bold text-slate-200">nangcap.work</span>
+                    <span class="text-slate-500 font-mono ml-2">— Founded April 2026. Next-Gen AAA.</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-6 text-slate-400">
+                <a href="services.html" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="case-studies.html" class="text-cyan-400 font-semibold">Case Studies</a>
+                <a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a>
+                <a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact</a>
+                <span class="font-mono text-slate-600">© 2026 nangcap.work</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

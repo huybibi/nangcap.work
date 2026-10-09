@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & AI Audit | nangcap.work — AI Automation Agency (AAA)</title>
+    <meta name="description" content="Schedule a 30-minute enterprise AI feasibility audit with nangcap.work. We analyze your manual bottlenecks and propose autonomous agent architectures.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            400: '#22d3ee',
+                            500: '#06b6d4',
+                            600: '#0891b2',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            background-color: #06080f;
+            color: #f1f5f9;
+            overflow-x: hidden;
+        }
+        .glow-radial-hero {
+            background: radial-gradient(circle at 50% 0%, rgba(6, 182, 212, 0.22) 0%, rgba(59, 130, 246, 0.12) 40%, rgba(6, 8, 15, 0) 75%);
+        }
+        .bento-card {
+            background: rgba(13, 19, 33, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .bento-card:hover {
+            border-color: rgba(6, 182, 212, 0.4);
+            box-shadow: 0 16px 40px -15px rgba(6, 182, 212, 0.22);
+            transform: translateY(-2px);
+        }
+        .gradient-headline {
+            background: linear-gradient(135deg, #ffffff 15%, #a5f3fc 50%, #38bdf8 80%, #818cf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .tech-pill {
+            background: rgba(6, 182, 212, 0.08);
+            border: 1px solid rgba(6, 182, 212, 0.25);
+            color: #22d3ee;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-black">
+
+    <!-- Ambient Glow FX -->
+    <div class="fixed inset-0 glow-radial-hero pointer-events-none -z-10"></div>
+    <div class="fixed top-20 right-[-10%] w-[550px] h-[550px] bg-cyan-600/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+
+    <!-- Navigation Header -->
+    <header class="w-full border-b border-white/5 backdrop-blur-xl sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3.5 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-blue-600 to-indigo-600 flex items-center justify-center shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-all duration-300">
+                    <i data-lucide="cpu" class="w-5 h-5 text-white"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-extrabold text-lg tracking-tight text-white group-hover:text-cyan-400 transition-colors">
+                        nangcap<span class="text-cyan-400">.work</span>
+                    </span>
+                    <span class="text-[10px] font-mono uppercase tracking-widest text-slate-400">AI Automation Agency</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="index.html" class="hover:text-cyan-400 transition-colors">Overview</a>
+                <a href="services.html" class="hover:text-cyan-400 transition-colors">AAA Services</a>
+                <a href="case-studies.html" class="hover:text-cyan-400 transition-colors">Case Studies</a>
+                <a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a>
+                <a href="contact.html" class="text-cyan-400 font-semibold border-b-2 border-cyan-400 pb-1">Contact</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span>Audit Slots Open</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+
+        <!-- HEADER BANNER -->
+        <section class="max-w-5xl mx-auto px-6 pt-16 pb-12 text-center">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full tech-pill text-xs font-mono font-semibold uppercase tracking-wider mb-5">
+                Technical Discovery // 30-Min Consultation
+            </div>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-6">
+                Request an Enterprise <br class="hidden sm:block" />
+                <span class="gradient-headline">AI Feasibility Audit</span>
+            </h1>
+            <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+                Connect directly with our automation engineers. Share your operational bottlenecks, and we'll map a concrete technical roadmap with estimated time-to-value.
+            </p>
+        </section>
+
+        <!-- FORM & CONTACT DETAILS -->
+        <section class="max-w-6xl mx-auto px-6 py-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                
+                <!-- Contact Info Column (Left) -->
+                <div class="lg:col-span-5 space-y-6 font-sans">
+                    <div class="bento-card rounded-3xl p-8 space-y-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Direct Communication Channels</h3>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 flex items-center justify-center shrink-0">
+                                <i data-lucide="mail" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 font-mono uppercase tracking-wider block font-semibold">Engineering Inbox</span>
+                                <span class="text-base font-bold text-white font-mono">architects@nangcap.work</span>
+                                <p class="text-xs text-slate-500 mt-0.5">Average technical response under 4 hours.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/30 text-blue-400 flex items-center justify-center shrink-0">
+                                <i data-lucide="message-square" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 font-mono uppercase tracking-wider block font-semibold">Priority Slack / Telegram Bridge</span>
+                                <span class="text-sm font-bold text-white">Dedicated Client Channels</span>
+                                <p class="text-xs text-slate-500 mt-0.5">Instant engineer-to-engineer communication.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 flex items-center justify-center shrink-0">
+                                <i data-lucide="globe" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 font-mono uppercase tracking-wider block font-semibold">Operational Coverage</span>
+                                <span class="text-sm font-semibold text-white block">Global Remote / APAC & US Timezones</span>
+                                <p class="text-xs text-slate-500 mt-0.5">Continuous asynchronous deployment schedules.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Security & NDA Pledge -->
+                    <div class="bento-card rounded-3xl p-8 border-emerald-500/30">
+                        <div class="flex items-center gap-3 text-emerald-400 mb-3">
+                            <i data-lucide="shield-check" class="w-6 h-6"></i>
+                            <h4 class="text-base font-bold text-white">Strict Bilateral NDA Guarantee</h4>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                            We treat all proprietary workflows, database structures, and internal schemas with strict enterprise confidentiality. Mutual non-disclosure agreements are signed before any deep system analysis.
+                        </p>
+                    </div>
+
+                    <!-- What happens on the call -->
+                    <div class="bento-card rounded-3xl p-6 font-mono text-xs text-slate-400 space-y-2">
+                        <div class="text-cyan-400 font-bold uppercase tracking-wider">// In The 30-Min Discovery Session:</div>
+                        <div>1. Review current manual bottlenecks and tool stack.</div>
+                        <div>2. Identify 2-3 high-leverage agentic automation candidates.</div>
+                        <div>3. Provide estimated time-to-deploy and ballpark ROI projection.</div>
+                    </div>
+                </div>
+
+                <!-- Form Column (Right) -->
+                <div class="lg:col-span-7 bento-card rounded-3xl p-8 sm:p-10 font-sans">
+                    <h3 class="text-2xl font-bold text-white mb-2">Book Your AI Feasibility Audit</h3>
+                    <p class="text-xs sm:text-sm text-slate-400 mb-8">Fill in the technical context below so our team can review your tech stack before our initial session.</p>
+
+                    <form id="audit-form" class="space-y-4" onsubmit="handleAuditSubmit(event)">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1.5">Your Full Name *</label>
+                                <input 
+                                    type="text" 
+                                    id="a-name"
+                                    required 
+                                    placeholder="Alex Chen" 
+                                    class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all"
+                                />
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1.5">Work Email Address *</label>
+                                <input 
+                                    type="email" 
+                                    id="a-email"
+                                    required 
+                                    placeholder="alex@company.com" 
+                                    class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1.5">Company Name & Domain *</label>
+                                <input 
+                                    type="text" 
+                                    id="a-company"
+                                    required
+                                    placeholder="Acme Corp (acme.com)" 
+                                    class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all"
+                                />
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1.5">Company Team Size</label>
+                                <select 
+                                    id="a-team"
+                                    class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-white/10 text-white text-sm focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all font-mono"
+                                >
+                                    <option value="1-10">1 - 10 employees</option>
+                                    <option value="11-50">11 - 50 employees</option>
+                                    <option value="51-200">51 - 200 employees</option>
+                                    <option value="200+">200+ Enterprise</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1.5">Primary Capability Needed</label>
+                            <select 
+                                id="a-service"
+                                class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-white/10 text-white text-sm focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all font-mono"
+                            >
+                                <option value="multi-agent">Autonomous Multi-Agent Swarms & Task Execution</option>
+                                <option value="rag">Enterprise Knowledge Base & Corrective RAG (Hallucination-free)</option>
+                                <option value="workflows">Full-Stack Workflow Orchestration (n8n, Webhooks, APIs)</option>
+                                <option value="voice">24/7 Sub-500ms Voice Concierge & Omnichannel Bots</option>
+                                <option value="full-audit">Comprehensive End-to-End Operational Audit</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1.5">Target Monthly Budget for Automation</label>
+                            <select 
+                                id="a-budget"
+                                class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-white/10 text-white text-sm focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all font-mono"
+                            >
+                                <option value="3.5k-5k">$3,500 - $5,000 (Pilot Sprint)</option>
+                                <option value="5k-10k">$5,000 - $10,000 / month (Continuous AAA Partner)</option>
+                                <option value="10k+">$10,000+ / month (Enterprise Scale)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1.5">Describe Your Current Bottleneck</label>
+                            <textarea 
+                                id="a-notes"
+                                rows="3" 
+                                placeholder="E.g., Our support team spends 30 hours weekly manually looking up order IDs in Postgres, or we need to automate invoice reconciliation between Stripe and QuickBooks..."
+                                class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all"
+                            ></textarea>
+                        </div>
+
+                        <button 
+                            type="submit" 
+                            id="audit-submit-btn"
+                            class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-black font-extrabold text-sm transition-all shadow-xl shadow-cyan-400/25 flex items-center justify-center gap-2"
+                        >
+                            <span>Schedule Feasibility Audit</span>
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                        </button>
+
+                        <div id="audit-feedback" class="text-center text-xs font-semibold text-emerald-400 hidden mt-3 p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/20 font-mono"></div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="w-full border-t border-white/5 py-12 text-slate-500 text-xs sm:text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-black font-bold">
+                    <i data-lucide="cpu" class="w-4 h-4"></i>
+                </div>
+                <div>
+                    <span class="font-bold text-slate-200">nangcap.work</span>
+                    <span class="text-slate-500 font-mono ml-2">— Founded April 2026. Next-Gen AAA.</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-6 text-slate-400">
+                <a href="services.html" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="case-studies.html" class="hover:text-cyan-400 transition-colors">Case Studies</a>
+                <a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a>
+                <a href="contact.html" class="text-cyan-400 font-semibold">Contact</a>
+                <span class="font-mono text-slate-600">© 2026 nangcap.work</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        function handleAuditSubmit(e) {
+            e.preventDefault();
+            const btn = document.getElementById('audit-submit-btn');
+            const feedback = document.getElementById('audit-feedback');
+            const name = document.getElementById('a-name').value.trim();
+
+            btn.disabled = true;
+            btn.classList.add('opacity-70');
+
+            setTimeout(() => {
+                feedback.classList.remove('hidden');
+                feedback.textContent = `Thank you, ${name}! Your audit request has been routed to our lead automation architects. We will contact you within 24 hours with scheduling details.`;
+                e.target.reset();
+                btn.disabled = false;
+                btn.classList.remove('opacity-70');
+            }, 600);
+        }
+    </script>
+</body>
+</html>

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="vi" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nangcap.work Agency | Digital Marketing & Performance Tăng Trưởng Thực Chiến (Est. 2024)</title>
-    <meta name="description" content="nangcap.work Agency - Digital Marketing Agency thế hệ mới thành lập năm 2024. Chuyên sâu Performance Ads, Creative Content Engine và Tối ưu hóa LTV cho doanh nghiệp.">
+    <title>nangcap.work | Next-Gen AI Automation Agency (AAA)</title>
+    <meta name="description" content="nangcap.work is an elite AI Automation Agency founded in April 2026. We build autonomous AI agents, intelligent workflows, and custom LLM solutions to scale enterprise productivity.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -19,19 +19,16 @@
                 extend: {
                     fontFamily: {
                         sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
                     },
                     colors: {
                         brand: {
-                            50: '#eef6ff',
-                            100: '#d9ebff',
-                            200: '#bcdbff',
-                            300: '#8ec3ff',
-                            400: '#59a1ff',
-                            500: '#327fff',
-                            600: '#1b60f5',
-                            700: '#1349e1',
-                            800: '#163cb6',
-                            900: '#17368f',
+                            50: '#ecfeff',
+                            100: '#cffafe',
+                            400: '#22d3ee',
+                            500: '#06b6d4',
+                            600: '#0891b2',
+                            neon: '#00f2fe',
                         }
                     }
                 }
@@ -44,66 +41,74 @@
 
     <style>
         body {
-            background-color: #090d16;
+            background-color: #06080f;
             color: #f1f5f9;
             overflow-x: hidden;
         }
-        .glow-radial {
-            background: radial-gradient(circle at 50% -20%, rgba(37, 99, 235, 0.28) 0%, rgba(15, 23, 42, 0) 70%);
+        .glow-radial-hero {
+            background: radial-gradient(circle at 50% 0%, rgba(6, 182, 212, 0.22) 0%, rgba(59, 130, 246, 0.12) 40%, rgba(6, 8, 15, 0) 75%);
         }
-        .glass-card {
-            background: rgba(15, 23, 42, 0.72);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
+        .bento-card {
+            background: rgba(13, 19, 33, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }
-        .glass-card:hover {
-            border-color: rgba(96, 165, 250, 0.38);
-            box-shadow: 0 12px 36px -12px rgba(59, 130, 246, 0.25);
+        .bento-card:hover {
+            border-color: rgba(6, 182, 212, 0.4);
+            box-shadow: 0 16px 40px -15px rgba(6, 182, 212, 0.22);
+            transform: translateY(-2px);
         }
-        .gradient-heading {
-            background: linear-gradient(135deg, #ffffff 10%, #93c5fd 60%, #3b82f6 100%);
+        .gradient-headline {
+            background: linear-gradient(135deg, #ffffff 15%, #a5f3fc 50%, #38bdf8 80%, #818cf8 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .tag-pill {
-            background: rgba(59, 130, 246, 0.1);
-            border: 1px solid rgba(59, 130, 246, 0.25);
-            color: #60a5fa;
+        .tech-pill {
+            background: rgba(6, 182, 212, 0.08);
+            border: 1px solid rgba(6, 182, 212, 0.25);
+            color: #22d3ee;
+        }
+        .code-box {
+            background: rgba(4, 7, 14, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.07);
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col justify-between selection:bg-blue-600 selection:text-white">
+<body class="min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-black">
 
-    <!-- Background Orbs -->
-    <div class="fixed inset-0 glow-radial pointer-events-none -z-10"></div>
-    <div class="fixed -top-32 -right-32 w-96 h-96 bg-blue-600/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
-    <div class="fixed top-1/2 -left-48 w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <!-- Ambient Glow FX -->
+    <div class="fixed inset-0 glow-radial-hero pointer-events-none -z-10"></div>
+    <div class="fixed top-20 right-[-10%] w-[550px] h-[550px] bg-cyan-600/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+    <div class="fixed top-2/3 left-[-10%] w-[550px] h-[550px] bg-blue-600/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
 
-    <!-- Header / Navigation -->
-    <header class="w-full border-b border-white/5 backdrop-blur-md sticky top-0 z-50">
+    <!-- Navigation Header -->
+    <header class="w-full border-b border-white/5 backdrop-blur-xl sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center shadow-lg shadow-blue-500/25 group-hover:scale-105 transition-transform duration-300">
-                    <i data-lucide="zap" class="w-5 h-5 text-white"></i>
+            <a href="index.html" class="flex items-center gap-3.5 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-blue-600 to-indigo-600 flex items-center justify-center shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-all duration-300">
+                    <i data-lucide="cpu" class="w-5 h-5 text-white"></i>
                 </div>
                 <div class="flex flex-col">
-                    <span class="font-bold text-lg tracking-tight text-white group-hover:text-blue-400 transition-colors">nangcap<span class="text-blue-500">.work</span></span>
-                    <span class="text-[10px] text-slate-400 font-semibold uppercase tracking-wider">Digital Marketing Agency</span>
+                    <span class="font-extrabold text-lg tracking-tight text-white group-hover:text-cyan-400 transition-colors">
+                        nangcap<span class="text-cyan-400">.work</span>
+                    </span>
+                    <span class="text-[10px] font-mono uppercase tracking-widest text-slate-400">AI Automation Agency</span>
                 </div>
             </a>
 
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-                <a href="index.html" class="text-blue-400 font-semibold border-b-2 border-blue-500 pb-1">Trang Chủ</a>
-                <a href="dich-vu.html" class="hover:text-blue-400 transition-colors">Dịch Vụ</a>
-                <a href="du-an.html" class="hover:text-blue-400 transition-colors">Dự Án Thực Chiến</a>
-                <a href="ve-chung-toi.html" class="hover:text-blue-400 transition-colors">Về Chúng Tôi</a>
-                <a href="lien-he.html" class="hover:text-blue-400 transition-colors">Liên Hệ</a>
+                <a href="index.html" class="text-cyan-400 font-semibold border-b-2 border-cyan-400 pb-1">Overview</a>
+                <a href="services.html" class="hover:text-cyan-400 transition-colors">AAA Services</a>
+                <a href="case-studies.html" class="hover:text-cyan-400 transition-colors">Case Studies</a>
+                <a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a>
+                <a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact</a>
             </nav>
 
             <div class="flex items-center gap-4">
-                <a href="lien-he.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs sm:text-sm font-semibold transition-all shadow-md shadow-blue-600/30 hover:-translate-y-0.5">
-                    <span>Nhận Tư Vấn 1-1</span>
+                <a href="contact.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-black font-semibold text-xs sm:text-sm transition-all shadow-lg shadow-cyan-500/25 hover:-translate-y-0.5">
+                    <span>Book AI Audit</span>
                     <i data-lucide="arrow-right" class="w-4 h-4"></i>
                 </a>
             </div>
@@ -115,440 +120,391 @@
 
         <!-- HERO SECTION -->
         <section class="max-w-6xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center flex flex-col items-center">
-            <!-- Badge Founded 2024 -->
-            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass-card text-slate-300 text-xs sm:text-sm font-medium mb-8">
-                <span class="px-2.5 py-0.5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-wider">Thành Lập 2024</span>
-                <span class="text-slate-300 font-medium">Digital Marketing Thế Hệ Mới — Tăng Trưởng Dựa Trên Dữ Liệu</span>
-                <i data-lucide="sparkles" class="w-4 h-4 text-amber-400"></i>
+            
+            <!-- Founded April 2026 Badge -->
+            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bento-card text-xs sm:text-sm font-mono mb-8">
+                <span class="px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 text-xs font-bold uppercase tracking-wider">Est. April 2026</span>
+                <span class="text-slate-300">Engineered for the Agentic & Autonomous Era</span>
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
             </div>
 
             <!-- Headline -->
-            <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight max-w-5xl leading-[1.15] mb-6">
-                Chuyển Hóa Ngân Sách Ads Thành <br class="hidden sm:block" />
-                <span class="gradient-heading">Doanh Số Thực Tế</span> Bền Vững
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight max-w-5xl leading-[1.12] mb-6">
+                Replace Manual Overhead With <br class="hidden sm:block" />
+                <span class="gradient-headline">Autonomous AI Agent</span> Systems
             </h1>
 
             <!-- Subtitle -->
-            <p class="text-slate-400 text-base sm:text-xl max-w-3xl leading-relaxed mb-10">
-                Từ năm <span class="text-white font-semibold">2024</span>, <span class="text-blue-400 font-semibold">nangcap.work Agency</span> đồng hành cùng các doanh nghiệp SMEs và E-commerce bứt phá giới hạn với chiến lược Performance Marketing đa định dạng, sáng tạo nội dung chuyển đổi và tối ưu vòng đời khách hàng (LTV).
+            <p class="text-slate-300 text-base sm:text-xl max-w-3xl leading-relaxed mb-10">
+                Founded in <span class="text-cyan-400 font-semibold">April 2026</span>, <span class="text-white font-semibold">nangcap.work</span> is a specialized AI Automation Agency (AAA). We engineer end-to-end multi-agent architectures, bespoke RAG pipelines, and automated business workflows that operate 24/7 with zero human latency.
             </p>
 
-            <!-- CTA Action Buttons -->
+            <!-- CTA Actions -->
             <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-16">
-                <a href="lien-he.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm transition-all shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 hover:-translate-y-0.5">
-                    <i data-lucide="file-check" class="w-4 h-4"></i>
-                    <span>Đăng Ký Audit Kênh Miễn Phí</span>
+                <a href="contact.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-black font-bold text-sm transition-all shadow-xl shadow-cyan-500/30 hover:-translate-y-0.5">
+                    <i data-lucide="sparkles" class="w-4 h-4"></i>
+                    <span>Schedule Discovery & AI Audit</span>
                 </a>
-                <a href="dich-vu.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl glass-card text-slate-200 hover:text-white hover:bg-white/10 font-semibold text-sm transition-all hover:-translate-y-0.5">
-                    <i data-lucide="layout-grid" class="w-4 h-4"></i>
-                    <span>Khám Phá Dịch Vụ Cốt Lõi</span>
+                <a href="services.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bento-card text-slate-200 hover:text-white font-semibold text-sm transition-all hover:-translate-y-0.5">
+                    <i data-lucide="workflow" class="w-4 h-4 text-cyan-400"></i>
+                    <span>Explore AAA Solutions</span>
                 </a>
             </div>
 
-            <!-- Stats Bar -->
-            <div id="stats" class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 w-full max-w-5xl text-left">
-                <div class="glass-card rounded-2xl p-6">
-                    <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold block mb-1">Khởi nguồn từ</span>
-                    <div class="text-3xl sm:text-4xl font-extrabold text-white">2024</div>
-                    <p class="text-xs text-slate-400 mt-2">Kỷ nguyên AI & Data Marketing hiện đại</p>
+            <!-- Hero Metrics Bento Strip -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 w-full max-w-5xl text-left font-mono">
+                <div class="bento-card rounded-2xl p-6">
+                    <span class="text-[11px] uppercase tracking-widest text-slate-400 font-semibold block mb-1">Deployment Era</span>
+                    <div class="text-2xl sm:text-3xl font-extrabold text-white">Apr 2026</div>
+                    <p class="text-[11px] text-cyan-400 font-sans mt-2">Born in the Agentic wave</p>
                 </div>
-                <div class="glass-card rounded-2xl p-6">
-                    <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold block mb-1">Dự án triển khai</span>
-                    <div class="text-3xl sm:text-4xl font-extrabold text-blue-400">150+</div>
-                    <p class="text-xs text-slate-400 mt-2">Chiến dịch đa ngành nghề</p>
+                <div class="bento-card rounded-2xl p-6">
+                    <span class="text-[11px] uppercase tracking-widest text-slate-400 font-semibold block mb-1">Workflows Active</span>
+                    <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400">45+ Live</div>
+                    <p class="text-[11px] text-slate-400 font-sans mt-2">Production AI systems</p>
                 </div>
-                <div class="glass-card rounded-2xl p-6">
-                    <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold block mb-1">ROAS trung bình</span>
-                    <div class="text-3xl sm:text-4xl font-extrabold text-emerald-400">3.8x</div>
-                    <p class="text-xs text-slate-400 mt-2">Tối ưu hiệu quả trên từng đồng chi phí</p>
+                <div class="bento-card rounded-2xl p-6">
+                    <span class="text-[11px] uppercase tracking-widest text-slate-400 font-semibold block mb-1">Human Hours Saved</span>
+                    <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400">14,200+</div>
+                    <p class="text-[11px] text-slate-400 font-sans mt-2">Monthly manual labor cut</p>
                 </div>
-                <div class="glass-card rounded-2xl p-6">
-                    <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold block mb-1">Khách hàng hài lòng</span>
-                    <div class="text-3xl sm:text-4xl font-extrabold text-indigo-400">95%</div>
-                    <p class="text-xs text-slate-400 mt-2">Duy trì hợp tác liên tục</p>
+                <div class="bento-card rounded-2xl p-6">
+                    <span class="text-[11px] uppercase tracking-widest text-slate-400 font-semibold block mb-1">Execution Accuracy</span>
+                    <div class="text-2xl sm:text-3xl font-extrabold text-indigo-400">99.4%</div>
+                    <p class="text-[11px] text-slate-400 font-sans mt-2">Deterministic guardrails</p>
                 </div>
-            </div>
-
-            <div class="mt-8">
-                <a href="du-an.html" class="inline-flex items-center gap-2 text-xs sm:text-sm text-slate-400 hover:text-blue-400 transition-colors group">
-                    <span>Khám phá các Case Studies dự án thực tế tiêu biểu</span>
-                    <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
-                </a>
             </div>
         </section>
 
-        <!-- SERVICES SECTION -->
+        <!-- BENTO GRID: CORE AAA SERVICES -->
         <section id="services" class="max-w-7xl mx-auto px-6 py-20 border-t border-white/5">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full tag-pill text-xs font-semibold uppercase tracking-wider mb-3">
-                    Giải Pháp Cốt Lõi
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full tech-pill text-xs font-mono font-semibold uppercase tracking-wider mb-3">
+                    Engineered Capabilities
                 </div>
-                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Hệ Thống Dịch Vụ Digital Marketing Toàn Diện</h2>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4">
+                    The Modern AAA Architecture Stack
+                </h2>
                 <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
-                    Không đốt tiền vào những con số tương tác ảo. Chúng tôi tập trung vào tỉ lệ chuyển đổi, chi phí trên mỗi đơn hàng (CPA) và giá trị trọn đời của khách hàng.
+                    We eliminate friction points across your company by designing modular, autonomous AI layers that execute operations, triage decisions, and integrate directly with your software stack.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Service 1 -->
-                <div class="glass-card rounded-2xl p-7 flex flex-col justify-between transition-all duration-300">
+            <!-- Bento Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                
+                <!-- Bento Card 1: Multi-Agent Workflows (Wide) -->
+                <div class="bento-card rounded-3xl p-8 md:col-span-2 flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute -right-8 -bottom-8 w-48 h-48 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center mb-6">
-                            <i data-lucide="target" class="w-6 h-6"></i>
+                        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 flex items-center justify-center mb-6">
+                            <i data-lucide="bot" class="w-6 h-6"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Performance Ads</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                            Quảng cáo đa nền tảng (Meta, TikTok, Google Ads). Ứng dụng kỹ thuật Ma trận đa định dạng (MFA), phân tách nhóm sở thích đơn lẻ và đấu thầu thông minh để tránh lãng phí ngân sách.
+                        <span class="text-xs font-mono font-bold uppercase tracking-wider text-cyan-400">Tier 01 // Multi-Agent Orchestration</span>
+                        <h3 class="text-2xl font-bold text-white mt-1 mb-3">Autonomous Multi-Agent Swarms</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Deploy cooperative agent teams with specialized responsibilities: researcher, copywriter, code auditor, and CRM router. Built on advanced agent frameworks with human-in-the-loop escalation.
+                        </p>
+                    </div>
+                    
+                    <div class="code-box rounded-xl p-4 font-mono text-xs text-slate-300 space-y-1.5">
+                        <div class="text-cyan-400">// Sample Agent Dispatch</div>
+                        <div><span class="text-indigo-400">Agent.Dispatch</span>({ role: "LeadAuditor", model: "claude-3-7-sonnet" })</div>
+                        <div><span class="text-emerald-400">&gt; Status:</span> Verified customer telemetry | Routing to CRM in 12ms</div>
+                    </div>
+                </div>
+
+                <!-- Bento Card 2: Custom Enterprise RAG -->
+                <div class="bento-card rounded-3xl p-8 md:col-span-1 lg:col-span-2 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/30 text-blue-400 flex items-center justify-center mb-6">
+                            <i data-lucide="database" class="w-6 h-6"></i>
+                        </div>
+                        <span class="text-xs font-mono font-bold uppercase tracking-wider text-blue-400">Tier 02 // Knowledge Engineering</span>
+                        <h3 class="text-2xl font-bold text-white mt-1 mb-3">Corrective RAG & Private Vector Stores</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Turn scattered company docs, Notion hubs, Slack threads, and SQL databases into a hallucination-free, cited intelligence engine accessible instantly by staff and customers.
                         </p>
                     </div>
                     <ul class="text-xs text-slate-300 space-y-2 border-t border-white/5 pt-4">
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Micro-budget Test chuẩn xác</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Tối ưu CPA & Tỷ lệ chốt đơn</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-cyan-400"></i> Hybrid semantic & keyword chunking</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-cyan-400"></i> Zero data leakage / Local embeddings</li>
                     </ul>
                 </div>
 
-                <!-- Service 2 -->
-                <div class="glass-card rounded-2xl p-7 flex flex-col justify-between transition-all duration-300">
+                <!-- Bento Card 3: Workflow Automation -->
+                <div class="bento-card rounded-3xl p-8 md:col-span-1 lg:col-span-2 flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center mb-6">
-                            <i data-lucide="video" class="w-6 h-6"></i>
+                        <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 flex items-center justify-center mb-6">
+                            <i data-lucide="git-merge" class="w-6 h-6"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Creative & Video Engine</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                            Sản xuất video ngắn (Reels, TikTok, Shorts) đánh trúng nỗi đau khách hàng. Kịch bản neo cảm xúc, nội dung kích thích tương tác tự nhiên và bài trí hình ảnh thôi thúc hành động.
+                        <span class="text-xs font-mono font-bold uppercase tracking-wider text-indigo-400">Tier 03 // Integration Fabric</span>
+                        <h3 class="text-2xl font-bold text-white mt-1 mb-3">Intelligent n8n & API Workflows</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            We architect robust self-healing automations across Make, n8n, Stripe, Airtable, and proprietary webhooks, eliminating error-prone manual data entry forever.
                         </p>
                     </div>
-                    <ul class="text-xs text-slate-300 space-y-2 border-t border-white/5 pt-4">
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> Video ngắn viral giữ chân người xem</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> Content mỏ neo tạo độ tin cậy</li>
-                    </ul>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-[11px] font-mono text-slate-300">n8n Self-Hosted</span>
+                        <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-[11px] font-mono text-slate-300">Webhook Bridges</span>
+                        <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-[11px] font-mono text-slate-300">Stripe & CRMs</span>
+                    </div>
                 </div>
 
-                <!-- Service 3 -->
-                <div class="glass-card rounded-2xl p-7 flex flex-col justify-between transition-all duration-300">
+                <!-- Bento Card 4: Voice & Omnichannel AI -->
+                <div class="bento-card rounded-3xl p-8 md:col-span-2 flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center mb-6">
-                            <i data-lucide="repeat" class="w-6 h-6"></i>
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 text-purple-400 flex items-center justify-center mb-6">
+                            <i data-lucide="mic" class="w-6 h-6"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">CRM & Tối Ưu LTV</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                            Tối đa hóa doanh thu sau bán hàng (Post-Purchase Revenue). Xây dựng kịch bản chăm sóc 3 nấc, phân loại khách theo hành vi và kích hoạt tái mua hàng để tăng biên lợi nhuận.
+                        <span class="text-xs font-mono font-bold uppercase tracking-wider text-purple-400">Tier 04 // Conversational Ops</span>
+                        <h3 class="text-2xl font-bold text-white mt-1 mb-3">24/7 Voice & Omnichannel Assistants</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Sub-500ms latency voice agents and multi-platform text bots that qualify leads, book appointments on Google Calendar, resolve support tickets, and close sales autonomously.
                         </p>
                     </div>
-                    <ul class="text-xs text-slate-300 space-y-2 border-t border-white/5 pt-4">
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> Kịch bản Upsell & Cross-sell tự động</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> Giảm phụ thuộc vào tiền ads mới</li>
-                    </ul>
+                    <div class="grid grid-cols-3 gap-3 border-t border-white/5 pt-4 text-center">
+                        <div class="p-2 rounded-xl bg-black/30">
+                            <div class="text-lg font-bold text-white">&lt; 450ms</div>
+                            <span class="text-[10px] text-slate-400">Voice Latency</span>
+                        </div>
+                        <div class="p-2 rounded-xl bg-black/30">
+                            <div class="text-lg font-bold text-cyan-400">100%</div>
+                            <span class="text-[10px] text-slate-400">Calendar Sync</span>
+                        </div>
+                        <div class="p-2 rounded-xl bg-black/30">
+                            <div class="text-lg font-bold text-emerald-400">0</div>
+                            <span class="text-[10px] text-slate-400">Missed Calls</span>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Service 4 -->
-                <div class="glass-card rounded-2xl p-7 flex flex-col justify-between transition-all duration-300">
-                    <div>
-                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-6">
-                            <i data-lucide="briefcase" class="w-6 h-6"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Tư Vấn & Đào Tạo In-house</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                            Đồng hành xây dựng bộ phận Marketing nội bộ tinh gọn cho doanh nghiệp. Chuyển giao bảng biểu đo lường, quy trình quản trị ngân sách và tư duy chạy ads chuẩn chỉnh.
-                        </p>
-                    </div>
-                    <ul class="text-xs text-slate-300 space-y-2 border-t border-white/5 pt-4">
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Đào tạo nhân sự thực chiến</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Quy chuẩn báo cáo minh bạch 100%</li>
-                    </ul>
-                </div>
             </div>
 
+            <!-- Link to full services -->
             <div class="mt-12 text-center">
-                <a href="dich-vu.html" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl glass-card text-blue-400 hover:text-white hover:bg-blue-600/20 text-xs sm:text-sm font-semibold transition-all">
-                    <span>Xem Bảng So Sánh Các Gói Dịch Vụ & Báo Giá Chi Tiết</span>
+                <a href="services.html" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bento-card text-cyan-400 hover:text-white text-xs sm:text-sm font-semibold transition-all">
+                    <span>Explore Comprehensive AAA Service Tiers & Deliverables</span>
                     <i data-lucide="arrow-right" class="w-4 h-4"></i>
                 </a>
             </div>
         </section>
 
-        <!-- PROCESS SECTION -->
-        <section id="process" class="max-w-6xl mx-auto px-6 py-20 border-t border-white/5">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full tag-pill text-xs font-semibold uppercase tracking-wider mb-3">
-                    Phương Pháp Làm Việc
-                </div>
-                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Quy Trình 4 Bước Chuẩn Thực Chiến</h2>
-                <p class="text-slate-400 text-sm sm:text-base">Mọi quyết định đều dựa trên số liệu thực tế, minh bạch và an toàn cho ngân sách của bạn.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
-                <div class="glass-card rounded-2xl p-6 relative">
-                    <div class="text-4xl font-black text-blue-500/20 mb-3">01</div>
-                    <h4 class="text-lg font-bold text-white mb-2">Audit & Khảo Sát</h4>
-                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        Phân tích tài khoản quảng cáo, cấu trúc giá sản phẩm và tìm ra các điểm nghẽn chuyển đổi hiện tại.
-                    </p>
-                </div>
-                <div class="glass-card rounded-2xl p-6 relative">
-                    <div class="text-4xl font-black text-blue-500/20 mb-3">02</div>
-                    <h4 class="text-lg font-bold text-white mb-2">Kế Hoạch & Ma Trận</h4>
-                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        Thiết lập ma trận nội dung MFA, xác định tệp khách hàng mục tiêu và phân bổ ngân sách thăm dò thông minh.
-                    </p>
-                </div>
-                <div class="glass-card rounded-2xl p-6 relative">
-                    <div class="text-4xl font-black text-blue-500/20 mb-3">03</div>
-                    <h4 class="text-lg font-bold text-white mb-2">Triển Khai & Đo Lường</h4>
-                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        Chạy thử nghiệm có kiểm soát, theo dõi chi phí trên từng inbox/đơn hàng thực tế theo từng ngày.
-                    </p>
-                </div>
-                <div class="glass-card rounded-2xl p-6 relative">
-                    <div class="text-4xl font-black text-blue-500/20 mb-3">04</div>
-                    <h4 class="text-lg font-bold text-white mb-2">Scale & Tối Ưu LTV</h4>
-                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        Nhân rộng các nhóm ads thắng thế, kết hợp hệ thống chăm sóc tự động để tối ưu hóa biên lợi nhuận ròng.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ROI CALCULATOR WIDGET -->
-        <section id="calculator" class="max-w-4xl mx-auto px-6 py-20 border-t border-white/5">
-            <div class="glass-card rounded-3xl p-8 sm:p-12 relative overflow-hidden">
+        <!-- INTERACTIVE CALCULATOR: AUTOMATION ROI ESTIMATOR -->
+        <section id="roi-calculator" class="max-w-4xl mx-auto px-6 py-20 border-t border-white/5">
+            <div class="bento-card rounded-3xl p-8 sm:p-12 relative overflow-hidden">
                 <div class="text-center max-w-xl mx-auto mb-10">
-                    <span class="inline-block px-3 py-1 rounded-full tag-pill text-xs font-semibold uppercase tracking-wider mb-3">Công Cụ Ước Tính</span>
-                    <h3 class="text-2xl sm:text-3xl font-bold text-white mb-2">Mô Phỏng Doanh Số Kỳ Vọng</h3>
-                    <p class="text-slate-400 text-xs sm:text-sm">Ước tính hiệu quả với hệ thống tối ưu chuyển đổi từ nangcap.work Agency.</p>
+                    <span class="inline-block px-3 py-1 rounded-full tech-pill text-xs font-mono font-semibold uppercase tracking-wider mb-3">ROI Simulator</span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-white mb-2">Estimate Your Automation Savings</h3>
+                    <p class="text-slate-400 text-xs sm:text-sm">See how replacing manual repetitive workflows with nangcap.work AI agents impacts your bottom line.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div class="space-y-6">
                         <div>
-                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
-                                Ngân Sách Ads Dự Kiến / Tháng: <span id="budget-display" class="text-blue-400 font-bold">20.000.000 VNĐ</span>
-                            </label>
+                            <div class="flex justify-between items-center text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                                <span>Team Members in Operations:</span>
+                                <span id="team-display" class="text-cyan-400 font-mono font-bold text-sm">6 Employees</span>
+                            </div>
                             <input 
                                 type="range" 
-                                id="budget-range" 
-                                min="5000000" 
-                                max="100000000" 
-                                step="5000000" 
-                                value="20000000" 
-                                class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
-                                oninput="updateCalculator()"
+                                id="team-range" 
+                                min="2" 
+                                max="50" 
+                                step="1" 
+                                value="6" 
+                                class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-cyan-400"
+                                oninput="calculateSavings()"
                             />
                         </div>
 
                         <div>
-                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
-                                Mục Tiêu ROAS Kỳ Vọng: <span id="roas-display" class="text-emerald-400 font-bold">3.5x</span>
-                            </label>
+                            <div class="flex justify-between items-center text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                                <span>Avg Repetitive Hours / Week / Person:</span>
+                                <span id="hours-display" class="text-blue-400 font-mono font-bold text-sm">18 Hours</span>
+                            </div>
                             <input 
                                 type="range" 
-                                id="roas-range" 
-                                min="2.0" 
-                                max="6.0" 
-                                step="0.5" 
-                                value="3.5" 
-                                class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-emerald-500"
-                                oninput="updateCalculator()"
+                                id="hours-range" 
+                                min="5" 
+                                max="35" 
+                                step="1" 
+                                value="18" 
+                                class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                                oninput="calculateSavings()"
+                            />
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-center text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                                <span>Estimated Blended Hourly Cost ($):</span>
+                                <span id="cost-display" class="text-indigo-400 font-mono font-bold text-sm">$25 / hr</span>
+                            </div>
+                            <input 
+                                type="range" 
+                                id="cost-range" 
+                                min="15" 
+                                max="100" 
+                                step="5" 
+                                value="25" 
+                                class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-indigo-500"
+                                oninput="calculateSavings()"
                             />
                         </div>
                     </div>
 
-                    <div class="bg-black/40 border border-white/10 rounded-2xl p-6 text-center">
-                        <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold block mb-2">Doanh Thu Ước Tính Đạt Được</span>
-                        <div id="revenue-result" class="text-3xl sm:text-4xl font-extrabold text-blue-400 mb-2">70.000.000 VNĐ</div>
-                        <span class="text-xs text-slate-500 block">Được trợ lực bởi tối ưu phễu chuyển đổi & chăm sóc LTV</span>
-                        
-                        <a href="#contact" class="mt-6 inline-flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold transition-all">
-                            <span>Lên Kế Hoạch Với Chúng Tôi</span>
-                            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                    <div class="code-box rounded-2xl p-6 text-center border border-cyan-500/30 space-y-4">
+                        <span class="text-xs text-slate-400 font-mono uppercase tracking-wider block">Estimated Annual Savings</span>
+                        <div id="annual-savings" class="text-3xl sm:text-4xl font-extrabold text-cyan-400 font-mono">$108,000</div>
+                        <div class="text-xs text-slate-300 font-mono">
+                            Equivalent to reclaiming <span id="hours-reclaimed" class="text-emerald-400 font-bold">432 hrs/mo</span> of creative focus.
+                        </div>
+                        <a href="contact.html" class="inline-flex items-center justify-center gap-2 w-full py-3.5 rounded-xl bg-cyan-400 hover:bg-cyan-300 text-black font-bold text-xs transition-all shadow-lg shadow-cyan-400/20">
+                            <span>Claim This ROI With Our Audit</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- FAQ SECTION -->
-        <section id="faq" class="max-w-4xl mx-auto px-6 py-20 border-t border-white/5">
+        <!-- DEPLOYMENT TIMELINE & ACCELERATOR -->
+        <section class="max-w-6xl mx-auto px-6 py-20 border-t border-white/5">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="inline-block px-3 py-1 rounded-full tech-pill text-xs font-mono font-semibold uppercase tracking-wider mb-3">Rapid Delivery</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-3">From Discovery to Autonomous Live in 14 Days</h2>
+                <p class="text-slate-400 text-sm">We don't do 6-month consulting bloat. We sprint, prototype, test, and ship.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 font-mono text-left">
+                <div class="bento-card rounded-2xl p-6">
+                    <span class="text-2xl font-black text-cyan-500/30 block mb-2">01 // Day 1-3</span>
+                    <h4 class="text-base font-bold text-white font-sans mb-1">Architecture Audit</h4>
+                    <p class="text-xs text-slate-400 font-sans leading-relaxed">Map manual bottlenecks, API endpoints, schema structures, and data security boundaries.</p>
+                </div>
+
+                <div class="bento-card rounded-2xl p-6">
+                    <span class="text-2xl font-black text-cyan-500/30 block mb-2">02 // Day 4-7</span>
+                    <h4 class="text-base font-bold text-white font-sans mb-1">Agent Prototyping</h4>
+                    <p class="text-xs text-slate-400 font-sans leading-relaxed">Build custom prompt guardrails, tool calling interfaces, and RAG vector indexes in sandbox.</p>
+                </div>
+
+                <div class="bento-card rounded-2xl p-6">
+                    <span class="text-2xl font-black text-cyan-500/30 block mb-2">03 // Day 8-11</span>
+                    <h4 class="text-base font-bold text-white font-sans mb-1">Shadow Testing</h4>
+                    <p class="text-xs text-slate-400 font-sans leading-relaxed">Run agents in parallel with human operators to evaluate edge cases, accuracy, and failovers.</p>
+                </div>
+
+                <div class="bento-card rounded-2xl p-6">
+                    <span class="text-2xl font-black text-cyan-500/30 block mb-2">04 // Day 12-14</span>
+                    <h4 class="text-base font-bold text-white font-sans mb-1">Autonomous Launch</h4>
+                    <p class="text-xs text-slate-400 font-sans leading-relaxed">Full production rollout, monitoring dashboard setup, and team handover documentation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ ACCORDION -->
+        <section class="max-w-4xl mx-auto px-6 py-20 border-t border-white/5">
             <div class="text-center max-w-2xl mx-auto mb-14">
-                <h2 class="text-3xl font-bold text-white mb-3">Câu Hỏi Thường Gặp</h2>
-                <p class="text-slate-400 text-sm">Các thắc mắc phổ biến của đối tác trước khi bắt đầu hợp tác.</p>
+                <h2 class="text-3xl font-bold text-white mb-3">Frequently Asked Questions</h2>
+                <p class="text-slate-400 text-sm">Everything you need to know about partnering with our AI Automation Agency.</p>
             </div>
 
             <div class="space-y-4">
-                <div class="glass-card rounded-2xl p-6">
+                <div class="bento-card rounded-2xl p-6">
                     <h4 class="font-bold text-white text-base mb-2 flex items-center justify-between">
-                        <span>nangcap.work Agency thành lập khi nào?</span>
-                        <i data-lucide="help-circle" class="w-4 h-4 text-blue-400"></i>
+                        <span>Why was nangcap.work launched in April 2026?</span>
+                        <i data-lucide="help-circle" class="w-4 h-4 text-cyan-400"></i>
                     </h4>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Chúng tôi được thành lập từ đầu năm 2024. Với vị thế là một Agency thế hệ mới, chúng tôi tận dụng tối đa sức mạnh của AI, công nghệ dữ liệu và tư duy Performance hiện đại để mang lại kết quả rõ ràng nhất mà không cồng kềnh bộ máy.
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Earlier automation agencies relied on brittle if-then scripts. April 2026 marks the maturity of reasoning LLMs and autonomous multi-agent tool-calling. nangcap.work was built from day one on native agentic foundations, avoiding the architectural debt of legacy software agencies.
                     </p>
                 </div>
 
-                <div class="glass-card rounded-2xl p-6">
+                <div class="bento-card rounded-2xl p-6">
                     <h4 class="font-bold text-white text-base mb-2 flex items-center justify-between">
-                        <span>Doanh nghiệp có quy mô nhỏ hoặc ngân sách ít có hợp tác được không?</span>
-                        <i data-lucide="help-circle" class="w-4 h-4 text-blue-400"></i>
+                        <span>How do you protect proprietary company data and IP?</span>
+                        <i data-lucide="help-circle" class="w-4 h-4 text-cyan-400"></i>
                     </h4>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Hoàn toàn được. Chúng tôi áp dụng quy tắc Test Ngân Sách Thăm Dò (Micro-Budget Test) để tìm ra công thức sinh lời trước khi doanh nghiệp mở rộng quy mô.
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        We prioritize zero-retention enterprise API endpoints, self-hosted vector databases, and localized private inference where required. Your data is strictly never used to train public foundation models, backed by formal non-disclosure agreements (NDAs).
                     </p>
                 </div>
 
-                <div class="glass-card rounded-2xl p-6">
+                <div class="bento-card rounded-2xl p-6">
                     <h4 class="font-bold text-white text-base mb-2 flex items-center justify-between">
-                        <span>Hợp đồng và báo cáo có minh bạch không?</span>
-                        <i data-lucide="help-circle" class="w-4 h-4 text-blue-400"></i>
+                        <span>Can your agents integrate with our legacy software?</span>
+                        <i data-lucide="help-circle" class="w-4 h-4 text-cyan-400"></i>
                     </h4>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        100% minh bạch. Tài khoản quảng cáo thuộc quyền sở hữu của bạn, số liệu báo cáo tự động theo thời gian thực và cam kết bảo mật thông tin dự án.
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Yes. If your system has a REST/GraphQL API, SQL database, webhook capability, or even accessible UI automation interfaces, our agents can bridge and orchestrate workflows seamlessly.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- CONTACT & AUDIT FORM -->
-        <section id="contact" class="max-w-4xl mx-auto px-6 py-20 border-t border-white/5">
-            <div class="glass-card rounded-3xl p-8 sm:p-12 relative overflow-hidden">
-                <div class="text-center max-w-xl mx-auto mb-10">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full tag-pill text-xs font-semibold uppercase tracking-wider mb-3">
-                        Đồng Hành Ngay Hôm Nay
-                    </div>
-                    <h2 class="text-3xl font-bold text-white mb-3">Nhận Bản Kiểm Toán (Audit) Kênh Miễn Phí</h2>
-                    <p class="text-slate-400 text-sm">Điền thông tin bên dưới, chuyên viên của nangcap.work sẽ nghiên cứu và liên hệ tư vấn giải pháp tối ưu trong vòng 24h.</p>
-                </div>
-
-                <form id="contact-form" class="space-y-4 max-w-lg mx-auto" onsubmit="handleFormSubmit(event)">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-xs font-medium text-slate-300 mb-1.5">Họ và tên của bạn</label>
-                            <input 
-                                type="text" 
-                                id="form-name"
-                                required 
-                                placeholder="Nguyễn Văn A" 
-                                class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
-                            />
-                        </div>
-                        <div>
-                            <label class="block text-xs font-medium text-slate-300 mb-1.5">Số điện thoại / Zalo</label>
-                            <input 
-                                type="tel" 
-                                id="form-phone"
-                                required 
-                                placeholder="09xxxxxxxx" 
-                                class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
-                            />
-                        </div>
-                    </div>
-
-                    <div>
-                        <label class="block text-xs font-medium text-slate-300 mb-1.5">Email liên hệ</label>
-                        <input 
-                            type="email" 
-                            id="form-email"
-                            required 
-                            placeholder="tenban@doanhnghiep.com" 
-                            class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
-                        />
-                    </div>
-
-                    <div>
-                        <label class="block text-xs font-medium text-slate-300 mb-1.5">Ngân sách dự kiến mỗi tháng</label>
-                        <select 
-                            id="form-budget"
-                            class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-white/10 text-white text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
-                        >
-                            <option value="duoi-20m">Dưới 20 triệu / tháng</option>
-                            <option value="20m-50m">Từ 20 - 50 triệu / tháng</option>
-                            <option value="50m-100m">Từ 50 - 100 triệu / tháng</option>
-                            <option value="tren-100m">Trên 100 triệu / tháng</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label class="block text-xs font-medium text-slate-300 mb-1.5">Mục tiêu ưu tiên nhất hiện tại</label>
-                        <textarea 
-                            id="form-goal"
-                            rows="3" 
-                            placeholder="Ví dụ: Giảm chi phí tin nhắn, tăng tỷ lệ chốt đơn, xây dựng kênh video ngắn..."
-                            class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
-                        ></textarea>
-                    </div>
-
-                    <button 
-                        type="submit" 
-                        id="form-submit-btn"
-                        class="w-full py-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm transition-all shadow-lg shadow-blue-600/30 flex items-center justify-center gap-2"
-                    >
-                        <span>Gửi Yêu Cầu Tư Vấn</span>
-                        <i data-lucide="send" class="w-4 h-4"></i>
-                    </button>
-
-                    <div id="contact-feedback" class="text-center text-xs font-semibold text-emerald-400 hidden mt-3"></div>
-                </form>
+        <!-- CTA SECTION -->
+        <section class="max-w-4xl mx-auto px-6 py-20 text-center">
+            <div class="bento-card rounded-3xl p-10 sm:p-14 relative overflow-hidden border-cyan-500/40">
+                <div class="absolute -top-24 -right-24 w-60 h-60 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none"></div>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white mb-3">Ready to Automate Your Operations?</h3>
+                <p class="text-slate-300 text-sm sm:text-base max-w-xl mx-auto mb-8">
+                    Schedule a 30-minute high-level AI feasibility audit with our lead automation architects. We'll identify your 3 highest-ROI automation opportunities.
+                </p>
+                <a href="contact.html" class="inline-flex items-center justify-center gap-2.5 px-9 py-4 rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-black font-extrabold text-sm transition-all shadow-xl shadow-cyan-400/25">
+                    <span>Book Your Free AI Audit</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
             </div>
         </section>
 
     </main>
 
     <!-- FOOTER -->
-    <footer class="w-full border-t border-white/5 py-10 text-slate-500 text-xs sm:text-sm">
+    <footer class="w-full border-t border-white/5 py-12 text-slate-500 text-xs sm:text-sm">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="flex items-center gap-3">
-                <div class="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center text-white">
-                    <i data-lucide="zap" class="w-4 h-4"></i>
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-black font-bold">
+                    <i data-lucide="cpu" class="w-4 h-4"></i>
                 </div>
                 <div>
-                    <span class="font-bold text-slate-200">nangcap.work Agency</span>
-                    <span class="text-slate-500 ml-2">— Khởi tạo từ 2024. Cùng nhau bứt phá giới hạn.</span>
+                    <span class="font-bold text-slate-200">nangcap.work</span>
+                    <span class="text-slate-500 font-mono ml-2">— Founded April 2026. Next-Gen AAA.</span>
                 </div>
             </div>
             <div class="flex items-center gap-6 text-slate-400">
-                <a href="dich-vu.html" class="hover:text-white transition-colors">Dịch Vụ</a>
-                <a href="du-an.html" class="hover:text-white transition-colors">Dự Án</a>
-                <a href="ve-chung-toi.html" class="hover:text-white transition-colors">Về Chúng Tôi</a>
-                <a href="lien-he.html" class="hover:text-white transition-colors">Liên Hệ</a>
-                <span>© 2024 - 2026 nangcap.work.</span>
+                <a href="services.html" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="case-studies.html" class="hover:text-cyan-400 transition-colors">Case Studies</a>
+                <a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a>
+                <a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact</a>
+                <span class="font-mono text-slate-600">© 2026 nangcap.work</span>
             </div>
         </div>
     </footer>
 
     <!-- INTERACTIVE SCRIPTS -->
     <script>
-        // Init Lucide
         lucide.createIcons();
 
-        // Calculator function
-        function updateCalculator() {
-            const budgetVal = parseInt(document.getElementById('budget-range').value);
-            const roasVal = parseFloat(document.getElementById('roas-range').value);
+        function calculateSavings() {
+            const team = parseInt(document.getElementById('team-range').value);
+            const hours = parseInt(document.getElementById('hours-range').value);
+            const cost = parseInt(document.getElementById('cost-range').value);
 
-            document.getElementById('budget-display').textContent = budgetVal.toLocaleString('vi-VN') + ' VNĐ';
-            document.getElementById('roas-display').textContent = roasVal.toFixed(1) + 'x';
+            document.getElementById('team-display').textContent = `${team} Employees`;
+            document.getElementById('hours-display').textContent = `${hours} Hours`;
+            document.getElementById('cost-display').textContent = `$${cost} / hr`;
 
-            const revenue = Math.round(budgetVal * roasVal);
-            document.getElementById('revenue-result').textContent = revenue.toLocaleString('vi-VN') + ' VNĐ';
+            // Annual Savings: team * hours * cost * 50 weeks * 0.8 (assuming 80% automated)
+            const annualSavings = Math.round(team * hours * cost * 50 * 0.8);
+            const monthlyHoursReclaimed = Math.round(team * hours * 4.2 * 0.8);
+
+            document.getElementById('annual-savings').textContent = `$${annualSavings.toLocaleString('en-US')}`;
+            document.getElementById('hours-reclaimed').textContent = `${monthlyHoursReclaimed.toLocaleString('en-US')} hrs/mo`;
         }
 
-        // Contact Form handler
-        function handleFormSubmit(e) {
-            e.preventDefault();
-            const btn = document.getElementById('form-submit-btn');
-            const feedback = document.getElementById('contact-feedback');
-            const name = document.getElementById('form-name').value.trim();
-
-            btn.disabled = true;
-            btn.classList.add('opacity-70');
-
-            setTimeout(() => {
-                feedback.classList.remove('hidden');
-                feedback.textContent = `Cảm ơn anh/chị ${name}! Đội ngũ chuyên gia nangcap.work Agency đã nhận được thông tin và sẽ liên hệ trong 24 giờ.`;
-                e.target.reset();
-                btn.disabled = false;
-                btn.classList.remove('opacity-70');
-            }, 600);
-        }
+        // Initialize on load
+        calculateSavings();
     </script>
 </body>
 </html>
